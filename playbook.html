@@ -132,14 +132,12 @@
   .scenario-num { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 500; color: white; line-height: 1; }
   .scenario-role { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; }
   .scenario-title { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--black); line-height: 1.15; margin-bottom: 12px; }
-
   .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
   .tag { font-size: 11px; font-weight: 500; padding: 4px 12px; border-radius: 20px; border: 1px solid; }
   .tag.forest { background: var(--forest-pale); border-color: var(--forest-mid); color: var(--forest); }
   .tag.plum   { background: var(--plum-pale);   border-color: var(--plum-mid);   color: var(--plum); }
   .tag.brown  { background: var(--brown-pale);  border-color: var(--brown-mid);  color: var(--brown); }
   .tag.gold   { background: #FBF6E8; border-color: #E5D4A8; color: #7A5C1E; }
-
   .module-table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
   .module-table th { text-align: left; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-muted); padding: 12px 16px; border-bottom: 1px solid var(--border); font-weight: 500; }
   .module-table td { padding: 14px 16px; border-bottom: 1px solid rgba(212,200,188,0.4); font-size: 13.5px; vertical-align: top; }
@@ -155,7 +153,6 @@
   .module-type.http     { background: var(--plum-pale); border-color: var(--plum-mid); color: var(--plum); }
   .module-desc { color: var(--ink); line-height: 1.6; }
   .module-note { font-size: 12px; color: var(--text-muted); margin-top: 4px; font-style: italic; }
-
   .logic-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 32px 0; }
   .logic-card { border-radius: 10px; padding: 24px; border: 1px solid; }
   .logic-card.forest { background: var(--forest-pale); border-color: var(--forest-mid); }
@@ -173,7 +170,6 @@
   .plum   .logic-dot { background: var(--plum); }
   .brown  .logic-dot { background: var(--brown); }
   .gold   .logic-dot { background: #8B6914; }
-
   .scoring-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; }
   .scoring-table th { text-align: left; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-muted); padding: 12px 16px; border-bottom: 2px solid var(--border); font-weight: 500; }
   .scoring-table td { padding: 12px 16px; border-bottom: 1px solid rgba(212,200,188,0.4); vertical-align: middle; }
@@ -194,7 +190,6 @@
   .weight-fill.pf{background:#8B6914;}        .weight-fill.eb{background:#3B6D11;}
   .weight-fill.gf{background:var(--plum-light);}
   .weight-pct { font-size: 12px; font-weight: 600; color: var(--text-muted); min-width: 36px; }
-
   .tier-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin: 24px 0; }
   .tier-card { border-radius: 10px; padding: 20px 16px; text-align: center; border: 1px solid; }
   .tier-score { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; margin-bottom: 4px; }
@@ -211,7 +206,6 @@
   .tier-card.strong .tier-action { color: var(--brown-light); }
   .tier-card.hold { background: var(--mist); border-color: var(--border); }
   .tier-card.hold .tier-score, .tier-card.hold .tier-name, .tier-card.hold .tier-action { color: var(--text-muted); }
-
   .resume-map { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
   .resume-path { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
   .resume-path-header { padding: 14px 18px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
@@ -225,20 +219,9 @@
   .resume-path-body p:last-child { margin-bottom: 0; }
 
   /* HANDWRITTEN RATIONALE */
-  .handwritten-rationale {
-    background: var(--plum);
-    border-radius: 12px;
-    padding: 32px;
-    margin: 32px 0;
-  }
-  .handwritten-rationale-title {
-    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
-    color: var(--plum-mid); font-weight: 600; margin-bottom: 16px;
-  }
-  .handwritten-rationale p {
-    font-size: 14px; color: rgba(247,245,242,0.85); line-height: 1.85;
-    margin-bottom: 14px;
-  }
+  .handwritten-rationale { background: var(--plum); border-radius: 12px; padding: 32px; margin: 32px 0; }
+  .handwritten-rationale-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--plum-mid); font-weight: 600; margin-bottom: 16px; }
+  .handwritten-rationale p { font-size: 14px; color: rgba(247,245,242,0.85); line-height: 1.85; margin-bottom: 14px; }
   .handwritten-rationale p:last-child { margin-bottom: 0; }
   .handwritten-rationale strong { color: #F7F5F2; font-weight: 600; }
 
@@ -277,17 +260,136 @@
   .sp-draft  { background: var(--forest-pale); border-color: var(--forest-mid); color: var(--forest); }
   .sp-applied{ background: var(--plum-pale); border-color: var(--plum-mid); color: var(--plum); }
   .sp-offer  { background: #FBF6E8; border-color: #E5D4A8; color: #7A5C1E; }
-
   .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
   .playbook-footer { background: var(--black); padding: 48px 60px; display: flex; justify-content: space-between; align-items: center; }
   .footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: rgba(247,245,242,0.8); }
   .footer-brand em { font-style: italic; color: var(--forest-mid); }
   .footer-meta { font-size: 12px; color: rgba(247,245,242,0.3); text-align: right; line-height: 1.8; }
   code { font-family: 'SF Mono','Fira Code','Courier New',monospace; font-size: 12px; background: rgba(92,61,107,0.08); padding: 1px 6px; border-radius: 4px; color: var(--plum); }
+
+  /* ============================================
+     MOBILE RESPONSIVE — ALL FIXES BELOW
+     ============================================ */
+  @media (max-width: 768px) {
+
+    /* COVER */
+    .cover { padding: 60px 24px; min-height: auto; }
+    .cover-title { font-size: 48px; }
+    .cover-title-em { font-size: 48px; }
+    .cover-subtitle { font-size: 17px; }
+    .cover-label { font-size: 10px; letter-spacing: 2px; }
+    .cover-desc { font-size: 13px; margin-bottom: 32px; }
+    .cover-meta { gap: 20px; }
+    .cover-meta-item { min-width: 100px; }
+    .cover-blob1, .cover-blob2 { width: 300px; height: 300px; }
+
+    /* PAGE WRAPPER */
+    .page { padding: 48px 20px; }
+
+    /* SECTION TITLES */
+    .section-title { font-size: 32px; }
+
+    /* INTRO */
+    .intro-section { padding: 48px 20px; }
+    .intro-inner { grid-template-columns: 1fr; gap: 32px; }
+    .intro-left h2 { font-size: 32px; }
+
+    /* WHY SECTION */
+    .why-section { padding: 48px 20px; }
+    .why-grid { grid-template-columns: 1fr; gap: 16px; }
+    .why-banner { padding: 20px; }
+    .why-banner p { font-size: 13px; }
+
+    /* HOW TEAMS */
+    .howto-section { padding: 48px 20px; }
+    .howto-grid { grid-template-columns: 1fr; gap: 16px; }
+    .audience-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    /* OVERVIEW */
+    .overview-bg { padding: 48px 20px; }
+    .overview-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    /* FLOW */
+    .flow-section { padding: 48px 20px; }
+    .flow-row { gap: 8px; }
+    .flow-node { min-width: 100px; padding: 12px 10px; }
+    .flow-node-name { font-size: 11px; }
+    .flow-arrow { width: 20px; }
+
+    /* CONFIG */
+    .config-section { padding: 48px 20px; }
+    .config-explainer { grid-template-columns: 1fr; gap: 24px; }
+    .config-row { flex-direction: column; gap: 4px; }
+    .config-key-desc { text-align: left; }
+
+    /* SCENARIO SECTIONS */
+    .scenario-section { padding: 48px 0; }
+    .scenario-header { grid-template-columns: 1fr; gap: 20px; }
+    .scenario-num-block { width: 60px; height: 60px; }
+    .scenario-num { font-size: 30px; }
+    .scenario-title { font-size: 28px; }
+
+    /* MODULE TABLES — scroll horizontally */
+    .module-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 12px; }
+    .module-table th, .module-table td { padding: 10px 12px; white-space: normal; }
+    .module-table th:first-child, .module-table td:first-child { min-width: 70px; }
+    .module-table th:nth-child(2), .module-table td:nth-child(2) { min-width: 120px; }
+    .module-table th:nth-child(3), .module-table td:nth-child(3) { min-width: 120px; }
+
+    /* LOGIC GRIDS */
+    .logic-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    /* SCORING TABLE */
+    .scoring-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .scoring-table th, .scoring-table td { padding: 10px 12px; font-size: 12px; }
+    .weight-bar { max-width: 60px; }
+
+    /* TIER ROW */
+    .tier-row { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    /* RESUME MAP */
+    .resume-map { grid-template-columns: 1fr; gap: 16px; }
+
+    /* GOLDEN RULE */
+    .golden-rule { padding: 20px; }
+    .golden-rule-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    /* TOUCHPOINTS */
+    .touchpoints-section { padding: 48px 20px; }
+    .touchpoint-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    /* SCHEMA */
+    .schema-section { padding: 48px 20px; }
+    .schema-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .schema-status-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    /* FOOTER */
+    .playbook-footer { flex-direction: column; gap: 24px; padding: 40px 20px; text-align: center; }
+    .footer-meta { text-align: center; }
+
+    /* HANDWRITTEN RATIONALE */
+    .handwritten-rationale { padding: 24px 20px; }
+    .handwritten-rationale p { font-size: 13px; }
+
+    /* GENERAL HEADINGS */
+    h2[style*="font-size:40px"], h2[style*="font-size:44px"] { font-size: 28px !important; }
+    h2[style*="font-size:36px"] { font-size: 26px !important; }
+    h3[style*="font-size:32px"] { font-size: 24px !important; }
+  }
+
+  @media (max-width: 480px) {
+    .cover-title { font-size: 38px; }
+    .cover-title-em { font-size: 38px; }
+    .cover-meta { gap: 16px; }
+    .cover-meta-item { min-width: 80px; }
+    .audience-grid { grid-template-columns: 1fr; }
+    .tier-row { grid-template-columns: 1fr; }
+    .schema-grid { grid-template-columns: 1fr; }
+    .schema-status-grid { grid-template-columns: 1fr 1fr; }
+  }
 </style>
 </head>
 <body>
-
 <!-- COVER -->
 <div class="cover">
   <div class="cover-blob1"></div>
@@ -305,7 +407,6 @@
     <div class="cover-meta-item"><p class="cover-meta-label">Status</p><p class="cover-meta-value">Active — 2026</p></div>
   </div>
 </div>
-
 <!-- INTRO -->
 <div class="intro-section">
   <div class="intro-inner">
@@ -331,7 +432,6 @@
     </div>
   </div>
 </div>
-
 <!-- WHY THIS MATTERS FOR TEAMS -->
 <div class="why-section">
   <div class="why-inner">
@@ -360,7 +460,6 @@
     </div>
   </div>
 </div>
-
 <!-- HOW TEAMS USE IT -->
 <div class="howto-section">
   <div class="howto-inner">
@@ -384,11 +483,9 @@
         <p class="howto-desc">Update job status as applications progress. Outcome data builds over time — revealing which sources and score ranges produce real results, informing future config adjustments.</p>
       </div>
     </div>
-
     <div class="demo-note" style="margin-top:40px;">
       <p><strong>Note — For Demonstration Purposes:</strong> The team role breakdown below is included to exemplify how an AI agent playbook would be structured for a cross-functional team in an organizational context. In real-world deployment, this pipeline is operated by a single candidate. The role model is presented here to demonstrate how this architecture scales — and how the same playbook format would be used to onboard, align, and assign ownership across a team.</p>
     </div>
-
     <div style="margin-top:32px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.08);">
       <p style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(247,245,242,0.35);margin-bottom:20px;">Role-Based Ownership (Demonstration Model)</p>
       <div class="audience-grid">
@@ -400,7 +497,6 @@
     </div>
   </div>
 </div>
-
 <!-- OVERVIEW -->
 <div class="overview-bg">
   <div class="overview-header">
@@ -415,7 +511,6 @@
     <div class="overview-card"><p class="overview-card-num oc4">04</p><p class="overview-card-title">AI Job Finder Scenario 4 — Doc Generator</p><p class="overview-card-desc">Fetches high-scoring jobs, reads the correct base documents from Google Drive, sends to Claude for targeted injection, creates a customized output document, and emails the link.</p></div>
   </div>
 </div>
-
 <!-- FLOW -->
 <div class="flow-section">
   <div class="flow-container">
@@ -438,7 +533,6 @@
     </div>
   </div>
 </div>
-
 <!-- CONFIG -->
 <div class="config-section">
   <div class="config-inner">
@@ -481,7 +575,6 @@
     </div>
   </div>
 </div>
-
 <!-- SCENARIO 1 -->
 <hr class="scenario-sep s1">
 <div class="page">
@@ -531,7 +624,6 @@
     </div>
   </div>
 </div>
-
 <!-- SCENARIO 2 -->
 <hr class="divider"><hr class="scenario-sep s2">
 <div class="page">
@@ -577,7 +669,6 @@
     </div>
   </div>
 </div>
-
 <!-- SCENARIO 3 -->
 <hr class="divider"><hr class="scenario-sep s3">
 <div class="page">
@@ -609,11 +700,9 @@
         <tr><td class="module-id">Store</td><td>Create Airtable Record</td><td><span class="module-type airtable">Airtable Create ×4</span></td><td class="module-desc">Creates one record per job with all fields populated — Score Category set automatically based on which router branch was taken<p class="module-note">Status defaults to "Ready to Apply" · Follow Up Date auto-set</p></td></tr>
       </tbody>
     </table>
-
     <p class="section-label" style="margin-top:48px;">Scoring System</p>
     <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;margin-bottom:8px;">7-Dimension Weighted Formula</h3>
     <p style="color:var(--text-muted);font-size:13.5px;margin-bottom:24px;max-width:640px;line-height:1.7;">Claude scores each dimension from 1–10 in 0.5 increments only — whole numbers are not permitted. Make calculates the final weighted score. All weights sum to 100% and are configurable in the Airtable Config table.</p>
-
     <table class="scoring-table">
       <thead><tr><th style="width:70px;">Code</th><th>Dimension</th><th style="width:190px;">Weight</th><th>What Claude Evaluates</th></tr></thead>
       <tbody>
@@ -627,24 +716,20 @@
       </tbody>
     </table>
     <p style="font-size:12px;color:var(--text-muted);font-style:italic;margin-bottom:8px;">All 7 dimensions are active. Weights sum to 100%. Adjustable at any time via the Airtable Config table.</p>
-
     <div class="tier-row">
       <div class="tier-card dream"><p class="tier-score">9.0+</p><p class="tier-name">Dream Role</p><p class="tier-action">Apply same day — all dimensions strongly aligned</p></div>
       <div class="tier-card must"><p class="tier-score">8.5–8.9</p><p class="tier-name">Must Apply</p><p class="tier-action">Apply same day — triggers automatic doc generation</p></div>
       <div class="tier-card strong"><p class="tier-score">8.0–8.49</p><p class="tier-name">Strong Fit</p><p class="tier-action">Prioritize — apply after additional research</p></div>
       <div class="tier-card hold"><p class="tier-score">&lt; 8.0</p><p class="tier-name">Monitor / Hold</p><p class="tier-action">Watch or exhaust higher-scored options first</p></div>
     </div>
-
     <p class="section-label" style="margin-top:48px;">Document Selection</p>
     <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;margin-bottom:16px;">Why There Are Multiple Resume &amp; Cover Letter Versions</h3>
-
     <div class="handwritten-rationale">
       <p class="handwritten-rationale-title">The Philosophy Behind Multiple Versions</p>
       <p>Every resume and cover letter in this system was <strong>written entirely by hand</strong> — not generated by AI, not templated, and not interchangeable. Each version reflects a specific industry context, a different set of values the employer is likely to hold, and a distinct aspect of my professional story that resonates most with that type of organization.</p>
       <p>They are not changed by the automation. They do not get rewritten. They are preserved in full because <strong>the human voice, the personal narrative, and the philosophical framing are the most important things a document can carry</strong> — and those are the first things lost when AI takes over the writing.</p>
       <p>Because every job that reaches document generation has already passed through the scoring system and scored extremely high, the keywords being injected are inherently relevant. High-scoring roles are already aligned to my skills and experience. Injecting those keywords into existing, genuinely written content is a targeted, honest optimization — not a fabrication.</p>
     </div>
-
     <div class="resume-map">
       <div class="resume-path">
         <div class="resume-path-header forest">Wellness + EdTech Resume</div>
@@ -670,7 +755,6 @@
     </div>
   </div>
 </div>
-
 <!-- SCENARIO 4 -->
 <hr class="divider"><hr class="scenario-sep s4">
 <div class="page">
@@ -704,15 +788,11 @@
         <tr><td class="module-id">Email</td><td>Send Doc Digest</td><td><span class="module-type google">Gmail</span></td><td class="module-desc">Sends all generated document links in a single email — Company, Role, and direct Google Doc link for each draft</td></tr>
       </tbody>
     </table>
-
-    <!-- GOLDEN RULE -->
     <div class="golden-rule">
       <p class="golden-rule-title">The Injection Standard — What Claude Does and Does Not Change</p>
-
       <div class="golden-rule-core">
         <p><strong>The original resume and cover letter are preserved in full.</strong> Both documents are saved exactly as written before any changes are made. What Claude does is targeted and minimal: inject the company name, the specific job title, and relevant keywords where they fit naturally into the existing text — and optionally add one or two factual details about the company that strengthen what is already being said.</p>
       </div>
-
       <div class="golden-rule-grid" style="margin-top:20px;">
         <div>
           <p class="golden-rule-col-title">What Claude Injects Into the Resume</p>
@@ -729,10 +809,8 @@
           <div class="logic-item gold"><span class="logic-dot"></span><span>1–2 company facts — only if they strengthen something already being said</span></div>
         </div>
       </div>
-
       <p class="golden-rule-warning">The candidate's own words are the most important element of every document. The philosophical framing, personal stories, voice, and narrative structure are never touched. What arrives in the output document should feel indistinguishable from something written personally for that company — because it was. The automation only handles the mechanical parts. The human wrote everything that matters.</p>
     </div>
-
     <div class="logic-grid">
       <div class="logic-card gold">
         <p class="logic-card-title">Claude Output Format</p>
@@ -751,7 +829,6 @@
     </div>
   </div>
 </div>
-
 <!-- TEAM TOUCHPOINTS -->
 <div class="touchpoints-section">
   <div class="touchpoints-inner">
@@ -768,7 +845,6 @@
     </div>
   </div>
 </div>
-
 <!-- SCHEMA -->
 <div class="schema-section">
   <div class="schema-inner">
@@ -801,7 +877,6 @@
     </div>
   </div>
 </div>
-
 <!-- FOOTER -->
 <div class="playbook-footer">
   <div class="footer-brand">Zuri AI Job Finder — <em>Agent Playbook</em></div>
@@ -811,6 +886,5 @@
     Built in Make · Powered by Claude · Tracked in Airtable
   </div>
 </div>
-
 </body>
 </html>
