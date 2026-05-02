@@ -348,7 +348,7 @@
     <div class="intro-right">
       <div class="principle-card">
         <p class="principle-title">Human in the Loop</p>
-        <p class="principle-text">The AI surfaces and scores opportunities. Every application decision stays with the human. The agent advises, it does not decide.</p>
+        <p class="principle-text">The AI surfaces and scores opportunities. Every application decision stays with the user. The agent advises, it does not decide.</p>
       </div>
       <div class="principle-card plum-c">
         <p class="principle-title">Config Driven, Not Hard Coded</p>
@@ -356,7 +356,7 @@
       </div>
       <div class="principle-card brown-c">
         <p class="principle-title">Modular by Design</p>
-        <p class="principle-text">Each scenario has exactly one job. A failure in sourcing does not break scoring. A scoring delay does not block document generation. Built the way professional software is built.</p>
+        <p class="principle-text">Each scenario has exactly one job. A failure in sourcing does not break scoring. A scoring delay does not block document generation.</p>
       </div>
     </div>
   </div>
@@ -376,7 +376,7 @@
       <div class="why-card">
         <div class="why-icon p"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="2" stroke="white" stroke-width="1.5"/><rect x="7" y="7" width="6" height="6" rx="1" fill="white"/></svg></div>
         <p class="why-card-title">Time Returned to High Value Work</p>
-        <p class="why-card-desc">Manual searching, deduplication, scoring, and document tailoring can eat hours every week. This agent collapses all of that into a Monday morning review of pre scored, pre drafted applications, so the human can focus on decisions only a human can make.</p>
+        <p class="why-card-desc">Manual searching, deduplication, scoring, and document tailoring can eat hours every week. This agent collapses all of that into a Monday morning review of pre scored, pre drafted applications, so the candidate can focus on decisions only a human can make.</p>
       </div>
       <div class="why-card">
         <div class="why-icon b"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polygon points="10,2 18,17 2,17" stroke="white" stroke-width="1.5" stroke-linejoin="round"/><polygon points="10,9 14,16 6,16" fill="white"/></svg></div>
@@ -385,7 +385,7 @@
       </div>
     </div>
     <div class="why-banner">
-      <p><strong>The bigger picture:</strong> This pipeline is a proof of concept for any team running repetitive, judgment based workflows. The same architecture, config driven parameters, modular scenarios, AI scoring, human review, can be applied to customer onboarding, content workflows, sales qualification, vendor evaluation, and more. The agent does not replace the team. It removes the mechanical work so the team can focus on what actually requires them.</p>
+      <p><strong>The bigger picture:</strong> This pipeline is a proof of concept for any team running repetitive, judgment based workflows. The same architecture, config driven parameters, modular scenarios, AI scoring, human review, can be applied to customer onboarding, content workflows, sales qualification, vendor evaluation, and more. The agent does not replace the team. It removes the mechanical work so the team can focus on the work that requires creativity, strategic thinking, and human insight.</p>
     </div>
   </div>
 </div>
@@ -394,7 +394,7 @@
   <div class="howto-inner">
     <p class="section-label" style="color:rgba(247,245,242,0.3);">For Teams</p>
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;color:#F7F5F2;line-height:1.1;margin-bottom:12px;">How Teams Interact With This Agent</h2>
-    <p style="font-size:14px;color:rgba(247,245,242,0.5);max-width:600px;line-height:1.8;">This agent is not a black box. Different team members engage with different parts of the pipeline depending on their role, no technical background required for most interactions.</p>
+    <p style="font-size:14px;color:rgba(247,245,242,0.5);max-width:600px;line-height:1.8;">Different team members engage with different parts of the pipeline depending on their role, no technical background required for most interactions.</p>
     <div class="howto-grid">
       <div class="howto-card"><p class="howto-title">Configure</p><p class="howto-desc">Update search keywords, salary floors, scoring weights, and job board priorities through the Airtable Config table. No automation editing required. One cell change recalibrates the whole system on the next run.</p></div>
       <div class="howto-card"><p class="howto-title">Review</p><p class="howto-desc">Weekly digest emails surface all new scored listings. Must Apply jobs have generated draft documents in Google Drive, linked directly in the Airtable record. These are structured drafts for candidate review and refinement, not finished applications.</p></div>
@@ -455,7 +455,7 @@
   <div class="config-inner">
     <p class="section-label">Airtable Config Table</p>
     <h2 class="section-title">The Control Center</h2>
-    <p style="color:var(--text-muted);font-size:14.5px;max-width:680px;line-height:1.8;margin-bottom:40px;">The Config table is the single source of truth for the entire pipeline. Every parameter that controls how the agent searches, filters, scores, and acts lives here, not buried inside the automation. This is what makes the system maintainable by anyone on the team. Nobody needs to open Make.com to change how the agent behaves.</p>
+    <p style="color:var(--text-muted);font-size:14.5px;max-width:680px;line-height:1.8;margin-bottom:40px;">The Config table is the single source of truth for the entire pipeline. Every parameter that controls how the agent searches, filters, scores, and acts lives here, not buried inside the automation. This is what makes the system maintainable by anyone on the team.</p>
     <div class="config-explainer">
       <div>
         <div class="config-card">
@@ -486,7 +486,7 @@
         </div>
         <div class="config-benefit">
           <p class="config-benefit-title">Why This Matters for Teams</p>
-          <p>No developer required. No automation editing needed. Change keywords to pivot the search strategy. Adjust weights to reprioritize what matters most. The system recalibrates automatically on the next scheduled run, putting control in the hands of the people who understand the goals, not just the people who built the pipes.</p>
+          <p>No developer required. No automation editing needed. Change keywords to pivot the search strategy. Adjust weights to reprioritize what matters most. The system recalibrates automatically on the next scheduled run, putting control in the hands of the people who understand the goals, not just the people who build the pipes.</p>
         </div>
       </div>
     </div>
@@ -679,7 +679,7 @@
           <span class="tag brown">4 Way Router</span>
           <span class="tag brown">Airtable Write</span>
         </div>
-        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">This is where the intelligence lives. Claude researches the company, scores 7 dimensions using 0.5 increment precision, and returns structured JSON. Make calculates the weighted formula, not the AI, keeping the math deterministic and auditable every single time. A 4 way router stores each job under the correct score tier in Airtable.</p>
+        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">This is where the intelligence lives. Claude researches the company, scores 7 dimensions using 0.5 increment precision, and returns structured JSON. Make calculates the weighted formula, not the AI, keeping the math deterministic and auditable time. A 4 way router stores each job under the correct score tier in Airtable.</p>
       </div>
     </div>
 
@@ -720,7 +720,7 @@
       <div class="step-summary brown">
         <div>
           <p class="step-summary-title brown">Make calculates the formula, not the AI</p>
-          <p class="step-summary-desc">This is a deliberate architectural choice. AI math drifts and cannot be audited, so Claude returns the raw dimension scores and Make runs the weighted formula: CF times weight plus SF times weight plus SK times weight and so on across all 7 dimensions. The result is a true floating point decimal, consistent and verifiable every time.</p>
+          <p class="step-summary-desc">This is a deliberate architectural choice. AI math drifts and cannot be audited, so Claude returns the raw dimension scores and Make runs the weighted formula: CF times weight plus SF times weight plus SK times weight and so on across all 7 dimensions. The result is a true floating point decimal, consistent and verifiable.</p>
         </div>
       </div>
       <div class="step-summary brown">
@@ -733,7 +733,7 @@
 
     <p class="section-label" style="margin-top:48px;">Scoring System</p>
     <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;margin-bottom:8px;">7 Dimension Weighted Formula</h3>
-    <p style="color:var(--text-muted);font-size:13.5px;margin-bottom:24px;max-width:640px;line-height:1.7;">Claude scores each dimension from 1 to 10 in 0.5 increments only. Whole numbers are not permitted. Make calculates the final weighted score. All weights sum to 100% and are configurable in the Airtable Config table.</p>
+    <p style="color:var(--text-muted);font-size:13.5px;margin-bottom:24px;max-width:640px;line-height:1.7;">Claude scores each dimension (based on candidate preferences, see example below) from 1 to 10 in 0.5 increments only. Whole numbers are not permitted. Make calculates the final weighted score. All weights sum to 100% and are configurable in the Airtable Config table.</p>
     <table class="scoring-table">
       <thead><tr><th style="width:70px;">Code</th><th>Dimension</th><th style="width:190px;">Weight</th><th>What Claude Evaluates</th></tr></thead>
       <tbody>
@@ -746,7 +746,7 @@
         <tr><td><span class="dim-code gf">GF</span></td><td style="font-weight:500;">Green Practice</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill gf" style="width:20%"></div></div><span class="weight-pct">5%</span></div></td><td style="font-size:13px;color:var(--text-muted);">B Corp certification, carbon neutral or net zero commitments, zero waste practice, environmental impact programs</td></tr>
       </tbody>
     </table>
-    <p style="font-size:12px;color:var(--text-muted);font-style:italic;margin-bottom:8px;">All 7 dimensions active. Weights sum to 100%. Adjustable at any time via the Airtable Config table.</p>
+    <p style="font-size:12px;color:var(--text-muted);font-style:italic;margin-bottom:8px;">Dimensions designed based on candidate profile. Weights sum to 100%. Adjustable at any time via the Airtable Config table.</p>
     <div class="tier-row">
       <div class="tier-card dream"><p class="tier-score">9.0+</p><p class="tier-name">Dream Role</p><p class="tier-action">Apply same day, all dimensions strongly aligned</p></div>
       <div class="tier-card must"><p class="tier-score">8.5 – 8.9</p><p class="tier-name">Must Apply</p><p class="tier-action">Apply same day, triggers automatic doc generation</p></div>
@@ -758,9 +758,9 @@
     <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;margin-bottom:16px;">Why There Are Multiple Resume and Cover Letter Versions</h3>
     <div class="handwritten-rationale">
       <p class="handwritten-rationale-title">The Philosophy Behind Multiple Versions</p>
-      <p>Every resume and cover letter in this system was <strong>written entirely by hand</strong>, not generated by AI,, not templated, and not interchangeable. Each version reflects a specific industry context, a different set of values the employer is likely to hold, and a distinct part of my professional story that resonates most with that type of organization.</p>
-      <p>They are not changed by the automation. They do not get rewritten. They are preserved in full because <strong>the human voice, the personal narrative, and the philosophical framing are the most important things a document can carry</strong>, and those are the first things lost when AI takes over the writing.</p>
-      <p>Because every job that reaches document generation has already scored very high, the keywords being injected are inherently relevant. High scoring roles are already aligned to my skills and experience. Injecting those keywords into existing, genuinely written content is a targeted, honest optimization, not a fabrication.</p>
+      <p>Every resume and cover letter in this system was <strong>written entirely by hand</strong>, not generated by AI, not templated, and not interchangeable. Each version reflects a specific industry context, a different set of values the employer is likely to hold, and a distinct part of my professional story that resonates most with that type of organization.</p>
+      <p>They are not changed by the automation. They do not get rewritten. They are preserved in full because <strong>the human voice, the personal narrative, and the philosophical framing are the most important things a document can carry</strong>, and those are the first things lost when AI takes over writing.</p>
+      <p>Because every job that reaches document generation has already scored very high, the keywords being injected are inherently relevant. High scoring roles are already aligned to my skills and experience. Injecting those keywords into existing, genuinely written content is a targeted, itentional optimization to original content.</p>
     </div>
     <div class="resume-map">
       <div class="resume-path">
@@ -870,8 +870,8 @@
       </div>
       <div class="step-summary gold">
         <div>
-          <p class="step-summary-title gold">A finished document is created and linked back</p>
-          <p class="step-summary-desc">A new Google Doc is created in the designated output folder, titled with the company name and job title. The URL is written back to the Resume Link field in Airtable and the Status updates to Draft Ready. A final email delivers every document link in one place. This is a structured draft, not a finished application. The candidate reviews the draft, checks quality, and uses the research and company context already gathered to add the kind of thoughtful, refined detail that only they can bring.</p>
+          <p class="step-summary-title gold">A finished document draft is created and linked back</p>
+          <p class="step-summary-desc">A new Google Doc is created in the designated output folder, titled with the company name and job title. The URL is written back to the Resume Link field in Airtable and the Status updates to Draft Ready. A final email delivers every document link in one place. This is a structured draft, not a finished application. The candidate reviews the draft, checks quality, and uses the research and company context already gathered to add thoughtful, refined detail.</p>
         </div>
       </div>
     </div>
@@ -897,7 +897,7 @@
           <div class="logic-item gold"><span class="logic-dot"></span><span>1 to 2 company facts, only if they strengthen something already being said</span></div>
         </div>
       </div>
-      <p class="golden-rule-warning">The candidate's own words are the most important element of every document. The philosophical framing, personal stories, voice, and narrative structure are never touched. What arrives in the output document should feel indistinguishable from something written personally for that company, because it was. The automation handles the mechanical work. What arrives in the draft is a strong, informed starting point. The candidate takes it from there, adding the depth and personal insight that no automation can replicate. This is a draft. The human elevates it.</p>
+      <p class="golden-rule-warning">The candidate's own words are the most important element of every document. The philosophical framing, personal stories, voice, and narrative structure are never touched. What arrives in the output document should feel indistinguishable from something written personally for that company, because it was. The automation handles the mechanical work. What arrives in the draft is a strong, informed starting point. The candidate takes it from there, adding the depth and personal insight that no automation can replicate. This is a draft. The candidate elevates it.</p>
     </div>
 
     <div class="logic-grid">
@@ -913,7 +913,6 @@
         <div class="logic-item"><span class="logic-dot"></span><span>Document generation only triggers for Must Apply scores at 8.5 and above</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>Every role at this threshold has already passed all filters and scoring</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>Keywords from the job description are inherently aligned to the candidate's skills</span></div>
-        <div class="logic-item"><span class="logic-dot"></span><span>Injection is honest optimization, not fabrication, because fit is confirmed first.</span></div>
       </div>
     </div>
   </div>
