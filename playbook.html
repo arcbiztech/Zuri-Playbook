@@ -14,9 +14,7 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Jost', sans-serif; background: var(--mist); color: var(--ink); font-size: 15px; line-height: 1.7; }
-
-  /* COVER */
-  .cover { background: var(--black); min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 80px 80px; position: relative; overflow: hidden; }
+  .cover { background: var(--black); min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 80px; position: relative; overflow: hidden; }
   .cover-blob1 { position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(92,61,107,0.35) 0%, transparent 70%); pointer-events: none; z-index: 0; }
   .cover-blob2 { position: absolute; bottom: -150px; left: -100px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(45,74,62,0.4) 0%, transparent 70%); pointer-events: none; z-index: 0; }
   .cover-label { font-size: 11px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: var(--plum-mid); margin-bottom: 32px; position: relative; z-index: 1; }
@@ -29,14 +27,10 @@
   .cover-meta-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--brown-mid); margin-bottom: 4px; }
   .cover-meta-value { font-size: 14px; color: #F7F5F2; font-weight: 500; }
   .cover-author { position: relative; z-index: 1; margin-bottom: 20px; font-family: 'Cormorant Garamond', serif; font-size: 18px; color: rgba(247,245,242,0.6); font-style: italic; letter-spacing: 1px; }
-
-  /* SECTION */
   .page { max-width: 860px; margin: 0 auto; padding: 80px 60px; }
   .section-label { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; display: flex; align-items: center; gap: 12px; }
   .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
   .section-title { font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 500; color: var(--black); line-height: 1.1; margin-bottom: 32px; }
-
-  /* INTRO */
   .intro-section { background: white; padding: 80px 60px; border-bottom: 1px solid var(--border); }
   .intro-inner { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
   .intro-left h2 { font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 500; line-height: 1.1; color: var(--black); margin-bottom: 20px; }
@@ -48,23 +42,17 @@
   .principle-card.plum-c .principle-title { color: var(--plum); }
   .principle-card.brown-c .principle-title { color: var(--brown); }
   .principle-text { font-size: 13px; color: var(--ink); line-height: 1.6; }
-
-  /* WHY THIS MATTERS */
   .why-section { background: var(--forest-pale); padding: 80px 60px; border-top: 1px solid var(--forest-mid); border-bottom: 1px solid var(--forest-mid); }
   .why-inner { max-width: 860px; margin: 0 auto; }
   .why-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 40px; }
   .why-card { background: white; border: 1px solid var(--forest-mid); border-radius: 12px; padding: 28px 24px; }
   .why-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 16px; }
-  .why-icon.f { background: var(--forest); }
-  .why-icon.p { background: var(--plum); }
-  .why-icon.b { background: var(--brown); }
+  .why-icon.f { background: var(--forest); } .why-icon.p { background: var(--plum); } .why-icon.b { background: var(--brown); }
   .why-card-title { font-size: 14px; font-weight: 600; color: var(--black); margin-bottom: 8px; }
   .why-card-desc { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
   .why-banner { margin-top: 40px; background: var(--forest); border-radius: 12px; padding: 28px 32px; }
   .why-banner p { font-size: 15px; color: rgba(247,245,242,0.85); line-height: 1.8; }
   .why-banner strong { color: #F7F5F2; font-weight: 600; }
-
-  /* HOW TEAMS */
   .howto-section { background: var(--black); padding: 80px 60px; }
   .howto-inner { max-width: 860px; margin: 0 auto; }
   .howto-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 40px; }
@@ -79,8 +67,6 @@
   .audience-pill { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 14px 16px; text-align: center; }
   .audience-pill-role { font-size: 12px; font-weight: 600; color: #F7F5F2; margin-bottom: 4px; }
   .audience-pill-use { font-size: 11px; color: rgba(247,245,242,0.4); line-height: 1.5; }
-
-  /* OVERVIEW */
   .overview-bg { background: var(--forest); padding: 80px 60px; }
   .overview-header { max-width: 860px; margin: 0 auto; }
   .overview-grid { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -89,11 +75,9 @@
   .oc1{color:var(--forest-mid);} .oc2{color:var(--plum-mid);} .oc3{color:var(--brown-mid);} .oc4{color:#C4A882;}
   .overview-card-title { font-size: 13px; font-weight: 600; color: #F7F5F2; margin-bottom: 8px; }
   .overview-card-desc { font-size: 13px; color: rgba(247,245,242,0.5); line-height: 1.6; }
-
-  /* FLOW */
   .flow-section { background: var(--forest-pale); padding: 64px 60px; border-top: 1px solid var(--forest-mid); border-bottom: 1px solid var(--forest-mid); }
   .flow-container { max-width: 860px; margin: 0 auto; }
-  .flow-row { display: flex; align-items: center; margin-top: 40px; overflow-x: auto; padding-bottom: 8px; }
+  .flow-row { display: flex; align-items: center; margin-top: 40px; overflow-x: auto; padding-bottom: 12px; }
   .flow-node { flex-shrink: 0; background: white; border: 1px solid var(--forest-mid); border-radius: 10px; padding: 16px 20px; text-align: center; min-width: 130px; }
   .flow-node-s { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
   .fn-s1{color:var(--forest);} .fn-s2{color:var(--plum);} .fn-s3{color:var(--brown);} .fn-s4{color:#8B6914;}
@@ -101,8 +85,50 @@
   .flow-sub { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
   .flow-arrow { flex-shrink: 0; width: 36px; height: 2px; background: var(--forest-mid); position: relative; }
   .flow-arrow::after { content:''; position:absolute; right:-1px; top:-4px; border-left:8px solid var(--forest-mid); border-top:5px solid transparent; border-bottom:5px solid transparent; }
-
-  /* CONFIG */
+  .scenario-flow-row { display: flex; align-items: center; overflow-x: auto; padding-bottom: 12px; margin: 32px 0; }
+  .sflow-node { flex-shrink: 0; border-radius: 10px; padding: 14px 18px; text-align: center; min-width: 115px; border: 1px solid; }
+  .sflow-node.forest { background: var(--forest-pale); border-color: var(--forest-mid); }
+  .sflow-node.plum   { background: var(--plum-pale);   border-color: var(--plum-mid); }
+  .sflow-node.brown  { background: var(--brown-pale);  border-color: var(--brown-mid); }
+  .sflow-node.gold   { background: #FBF6E8; border-color: #E5D4A8; }
+  .sflow-icon { font-size: 20px; margin-bottom: 6px; display: block; }
+  .sflow-name { font-size: 12px; font-weight: 600; }
+  .sflow-name.forest { color: var(--forest); }
+  .sflow-name.plum   { color: var(--plum); }
+  .sflow-name.brown  { color: var(--brown); }
+  .sflow-name.gold   { color: #7A5C1E; }
+  .sflow-sub { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+  .sflow-arrow { flex-shrink: 0; width: 24px; height: 2px; position: relative; }
+  .sflow-arrow.forest { background: var(--forest-mid); }
+  .sflow-arrow.plum   { background: var(--plum-mid); }
+  .sflow-arrow.brown  { background: var(--brown-mid); }
+  .sflow-arrow.gold   { background: #E5D4A8; }
+  .sflow-arrow::after { content:''; position:absolute; right:-1px; top:-4px; border-top:5px solid transparent; border-bottom:5px solid transparent; border-left-width:7px; border-left-style:solid; }
+  .sflow-arrow.forest::after { border-left-color: var(--forest-mid); }
+  .sflow-arrow.plum::after   { border-left-color: var(--plum-mid); }
+  .sflow-arrow.brown::after  { border-left-color: var(--brown-mid); }
+  .sflow-arrow.gold::after   { border-left-color: #E5D4A8; }
+  .step-summaries { display: flex; flex-direction: column; gap: 16px; margin: 32px 0; }
+  .step-summary { display: flex; gap: 20px; align-items: flex-start; padding: 20px 24px; border-radius: 12px; border: 1px solid; }
+  .step-summary.forest { background: var(--forest-pale); border-color: var(--forest-mid); }
+  .step-summary.plum   { background: var(--plum-pale);   border-color: var(--plum-mid); }
+  .step-summary.brown  { background: var(--brown-pale);  border-color: var(--brown-mid); }
+  .step-summary.gold   { background: #FBF6E8;            border-color: #E5D4A8; }
+  .step-summary-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+  .step-summary-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  .step-summary-title.forest { color: var(--forest); }
+  .step-summary-title.plum   { color: var(--plum); }
+  .step-summary-title.brown  { color: var(--brown); }
+  .step-summary-title.gold   { color: #7A5C1E; }
+  .step-summary-desc { font-size: 13px; color: var(--ink); line-height: 1.7; }
+  .scenario-screenshot { margin-bottom: 40px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+  .screenshot-label { padding: 12px 20px; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; }
+  .screenshot-label.forest { background: var(--forest); color: var(--forest-mid); }
+  .screenshot-label.plum   { background: var(--plum);   color: var(--plum-mid); }
+  .screenshot-label.brown  { background: var(--brown);  color: var(--brown-mid); }
+  .screenshot-label.gold   { background: #7A5C1E;       color: #E5D4A8; }
+  .screenshot-body { padding: 16px; background: #F8F9FA; }
+  .screenshot-body img { width: 100%; height: auto; display: block; border-radius: 6px; }
   .config-section { background: white; padding: 64px 60px; border-bottom: 1px solid var(--border); }
   .config-inner { max-width: 860px; margin: 0 auto; }
   .config-explainer { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; align-items: start; }
@@ -118,15 +144,13 @@
   .config-benefit { margin-top: 28px; padding: 20px 24px; background: var(--brown-pale); border: 1px solid var(--brown-mid); border-radius: 10px; }
   .config-benefit-title { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--brown); margin-bottom: 10px; }
   .config-benefit p { font-size: 13.5px; color: var(--ink); line-height: 1.7; }
-
-  /* SCENARIO */
   .scenario-sep { height: 4px; border: none; margin: 0; }
   .scenario-sep.s1 { background: linear-gradient(to right, var(--forest), var(--forest-mid)); }
   .scenario-sep.s2 { background: linear-gradient(to right, var(--plum), var(--plum-mid)); }
   .scenario-sep.s3 { background: linear-gradient(to right, var(--brown), var(--brown-mid)); }
   .scenario-sep.s4 { background: linear-gradient(to right, #7A5C1E, #C4A882); }
   .scenario-section { padding: 80px 0; }
-  .scenario-header { display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: start; margin-bottom: 48px; }
+  .scenario-header { display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: start; margin-bottom: 40px; }
   .scenario-num-block { width: 80px; height: 80px; border-radius: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .nb-forest{background:var(--forest);} .nb-plum{background:var(--plum);} .nb-brown{background:var(--brown);} .nb-gold{background:#7A5C1E;}
   .scenario-num { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 500; color: white; line-height: 1; }
@@ -138,21 +162,6 @@
   .tag.plum   { background: var(--plum-pale);   border-color: var(--plum-mid);   color: var(--plum); }
   .tag.brown  { background: var(--brown-pale);  border-color: var(--brown-mid);  color: var(--brown); }
   .tag.gold   { background: #FBF6E8; border-color: #E5D4A8; color: #7A5C1E; }
-  .module-table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
-  .module-table th { text-align: left; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-muted); padding: 12px 16px; border-bottom: 1px solid var(--border); font-weight: 500; }
-  .module-table td { padding: 14px 16px; border-bottom: 1px solid rgba(212,200,188,0.4); font-size: 13.5px; vertical-align: top; }
-  .module-table tr:last-child td { border-bottom: none; }
-  .module-table tr:hover td { background: rgba(212,200,188,0.12); }
-  .module-id { font-family: monospace; font-size: 12px; font-weight: 600; color: var(--text-muted); }
-  .module-type { font-size: 11px; background: var(--mist); border: 1px solid var(--border); border-radius: 6px; padding: 3px 10px; white-space: nowrap; color: var(--ink); font-weight: 500; }
-  .module-type.api      { background: var(--plum-pale); border-color: var(--plum-mid); color: var(--plum); }
-  .module-type.airtable { background: var(--forest-pale); border-color: var(--forest-mid); color: var(--forest); }
-  .module-type.google   { background: #EAF3FB; border-color: #B5D4F4; color: #185FA5; }
-  .module-type.util     { background: var(--brown-pale); border-color: var(--brown-mid); color: var(--brown); }
-  .module-type.webhook  { background: #FFF8E8; border-color: #F5D98C; color: #7A5C1E; }
-  .module-type.http     { background: var(--plum-pale); border-color: var(--plum-mid); color: var(--plum); }
-  .module-desc { color: var(--ink); line-height: 1.6; }
-  .module-note { font-size: 12px; color: var(--text-muted); margin-top: 4px; font-style: italic; }
   .logic-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 32px 0; }
   .logic-card { border-radius: 10px; padding: 24px; border: 1px solid; }
   .logic-card.forest { background: var(--forest-pale); border-color: var(--forest-mid); }
@@ -217,15 +226,11 @@
   .resume-path-body strong { color: var(--black); font-weight: 600; }
   .resume-path-body p { margin-bottom: 6px; }
   .resume-path-body p:last-child { margin-bottom: 0; }
-
-  /* HANDWRITTEN RATIONALE */
   .handwritten-rationale { background: var(--plum); border-radius: 12px; padding: 32px; margin: 32px 0; }
   .handwritten-rationale-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--plum-mid); font-weight: 600; margin-bottom: 16px; }
   .handwritten-rationale p { font-size: 14px; color: rgba(247,245,242,0.85); line-height: 1.85; margin-bottom: 14px; }
   .handwritten-rationale p:last-child { margin-bottom: 0; }
   .handwritten-rationale strong { color: #F7F5F2; font-weight: 600; }
-
-  /* GOLDEN RULE */
   .golden-rule { background: #FBF6E8; border: 1px solid #E5D4A8; border-radius: 12px; padding: 28px; margin: 32px 0; }
   .golden-rule-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #7A5C1E; font-weight: 600; margin-bottom: 20px; }
   .golden-rule-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
@@ -234,8 +239,6 @@
   .golden-rule-core { margin-top: 16px; background: #7A5C1E; border-radius: 8px; padding: 16px 20px; }
   .golden-rule-core p { font-size: 13.5px; color: rgba(247,245,242,0.9); line-height: 1.7; }
   .golden-rule-core strong { color: #F7F5F2; }
-
-  /* TOUCHPOINTS */
   .touchpoints-section { background: var(--plum); padding: 64px 60px; }
   .touchpoints-inner { max-width: 860px; margin: 0 auto; }
   .touchpoint-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 36px; }
@@ -244,8 +247,6 @@
   .tp-title { font-size: 15px; font-weight: 600; color: #F7F5F2; margin-bottom: 8px; }
   .tp-desc { font-size: 13px; color: rgba(247,245,242,0.55); line-height: 1.7; }
   .tp-who { display: inline-block; margin-top: 12px; font-size: 11px; padding: 3px 10px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; color: rgba(247,245,242,0.7); }
-
-  /* SCHEMA */
   .schema-section { background: var(--forest-pale); padding: 64px 60px; border-top: 1px solid var(--forest-mid); }
   .schema-inner { max-width: 860px; margin: 0 auto; }
   .schema-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 32px; }
@@ -261,145 +262,72 @@
   .sp-applied{ background: var(--plum-pale); border-color: var(--plum-mid); color: var(--plum); }
   .sp-offer  { background: #FBF6E8; border-color: #E5D4A8; color: #7A5C1E; }
   .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
-  .playbook-footer { background: var(--black); padding: 48px 60px; display: flex; justify-content: space-between; align-items: center; }
+  .playbook-footer { background: var(--black); padding: 48px 60px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
   .footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: rgba(247,245,242,0.8); }
   .footer-brand em { font-style: italic; color: var(--forest-mid); }
   .footer-meta { font-size: 12px; color: rgba(247,245,242,0.3); text-align: right; line-height: 1.8; }
   code { font-family: 'SF Mono','Fira Code','Courier New',monospace; font-size: 12px; background: rgba(92,61,107,0.08); padding: 1px 6px; border-radius: 4px; color: var(--plum); }
 
-  /* ============================================
-     MOBILE RESPONSIVE — ALL FIXES BELOW
-     ============================================ */
   @media (max-width: 768px) {
-
-    /* COVER */
     .cover { padding: 60px 24px; min-height: auto; }
-    .cover-title { font-size: 48px; }
-    .cover-title-em { font-size: 48px; }
+    .cover-title, .cover-title-em { font-size: 48px; }
     .cover-subtitle { font-size: 17px; }
-    .cover-label { font-size: 10px; letter-spacing: 2px; }
     .cover-desc { font-size: 13px; margin-bottom: 32px; }
     .cover-meta { gap: 20px; }
-    .cover-meta-item { min-width: 100px; }
-    .cover-blob1, .cover-blob2 { width: 300px; height: 300px; }
-
-    /* PAGE WRAPPER */
+    .cover-blob1, .cover-blob2 { width: 280px; height: 280px; }
     .page { padding: 48px 20px; }
-
-    /* SECTION TITLES */
     .section-title { font-size: 32px; }
-
-    /* INTRO */
-    .intro-section { padding: 48px 20px; }
+    .intro-section, .why-section, .howto-section, .overview-bg, .flow-section,
+    .config-section, .touchpoints-section, .schema-section { padding: 48px 20px; }
     .intro-inner { grid-template-columns: 1fr; gap: 32px; }
     .intro-left h2 { font-size: 32px; }
-
-    /* WHY SECTION */
-    .why-section { padding: 48px 20px; }
-    .why-grid { grid-template-columns: 1fr; gap: 16px; }
-    .why-banner { padding: 20px; }
+    .why-grid, .howto-grid { grid-template-columns: 1fr; gap: 16px; }
     .why-banner p { font-size: 13px; }
-
-    /* HOW TEAMS */
-    .howto-section { padding: 48px 20px; }
-    .howto-grid { grid-template-columns: 1fr; gap: 16px; }
     .audience-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-
-    /* OVERVIEW */
-    .overview-bg { padding: 48px 20px; }
     .overview-grid { grid-template-columns: 1fr; gap: 16px; }
-
-    /* FLOW */
-    .flow-section { padding: 48px 20px; }
-    .flow-row { gap: 8px; }
-    .flow-node { min-width: 100px; padding: 12px 10px; }
-    .flow-node-name { font-size: 11px; }
-    .flow-arrow { width: 20px; }
-
-    /* CONFIG */
-    .config-section { padding: 48px 20px; }
     .config-explainer { grid-template-columns: 1fr; gap: 24px; }
     .config-row { flex-direction: column; gap: 4px; }
     .config-key-desc { text-align: left; }
-
-    /* SCENARIO SECTIONS */
     .scenario-section { padding: 48px 0; }
     .scenario-header { grid-template-columns: 1fr; gap: 20px; }
     .scenario-num-block { width: 60px; height: 60px; }
     .scenario-num { font-size: 30px; }
     .scenario-title { font-size: 28px; }
-
-    /* MODULE TABLES — scroll horizontally */
-    .module-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 12px; }
-    .module-table th, .module-table td { padding: 10px 12px; white-space: normal; }
-    .module-table th:first-child, .module-table td:first-child { min-width: 70px; }
-    .module-table th:nth-child(2), .module-table td:nth-child(2) { min-width: 120px; }
-    .module-table th:nth-child(3), .module-table td:nth-child(3) { min-width: 120px; }
-
-    /* LOGIC GRIDS */
+    .step-summary { flex-direction: column; gap: 10px; }
     .logic-grid { grid-template-columns: 1fr; gap: 16px; }
-
-    /* SCORING TABLE */
-    .scoring-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .scoring-table th, .scoring-table td { padding: 10px 12px; font-size: 12px; }
+    .scoring-table { display: block; overflow-x: auto; }
     .weight-bar { max-width: 60px; }
-
-    /* TIER ROW */
     .tier-row { grid-template-columns: 1fr 1fr; gap: 10px; }
-
-    /* RESUME MAP */
     .resume-map { grid-template-columns: 1fr; gap: 16px; }
-
-    /* GOLDEN RULE */
     .golden-rule { padding: 20px; }
     .golden-rule-grid { grid-template-columns: 1fr; gap: 16px; }
-
-    /* TOUCHPOINTS */
-    .touchpoints-section { padding: 48px 20px; }
     .touchpoint-grid { grid-template-columns: 1fr; gap: 16px; }
-
-    /* SCHEMA */
-    .schema-section { padding: 48px 20px; }
     .schema-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
     .schema-status-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-
-    /* FOOTER */
-    .playbook-footer { flex-direction: column; gap: 24px; padding: 40px 20px; text-align: center; }
+    .playbook-footer { padding: 40px 20px; justify-content: center; }
     .footer-meta { text-align: center; }
-
-    /* HANDWRITTEN RATIONALE */
-    .handwritten-rationale { padding: 24px 20px; }
-    .handwritten-rationale p { font-size: 13px; }
-
-    /* GENERAL HEADINGS */
-    h2[style*="font-size:40px"], h2[style*="font-size:44px"] { font-size: 28px !important; }
-    h2[style*="font-size:36px"] { font-size: 26px !important; }
-    h3[style*="font-size:32px"] { font-size: 24px !important; }
+    h2[style*="40px"], h2[style*="44px"] { font-size: 28px !important; }
+    h2[style*="36px"] { font-size: 26px !important; }
+    h3[style*="32px"] { font-size: 24px !important; }
   }
-
   @media (max-width: 480px) {
-    .cover-title { font-size: 38px; }
-    .cover-title-em { font-size: 38px; }
-    .cover-meta { gap: 16px; }
-    .cover-meta-item { min-width: 80px; }
-    .audience-grid { grid-template-columns: 1fr; }
-    .tier-row { grid-template-columns: 1fr; }
-    .schema-grid { grid-template-columns: 1fr; }
+    .cover-title, .cover-title-em { font-size: 38px; }
+    .audience-grid, .tier-row, .schema-grid { grid-template-columns: 1fr; }
     .schema-status-grid { grid-template-columns: 1fr 1fr; }
   }
 </style>
 </head>
 <body>
-<!-- COVER -->
+
 <div class="cover">
   <div class="cover-blob1"></div>
   <div class="cover-blob2"></div>
   <p class="cover-label">Anderson Reality Consulting · Agent Systems Documentation</p>
   <h1 class="cover-title">Zuri AI</h1>
   <span class="cover-title-em">Job Finder</span>
-  <p class="cover-subtitle">Closed-Loop Intelligent Recruitment Pipeline — Agent Playbook</p>
+  <p class="cover-subtitle">Closed Loop Intelligent Recruitment Pipeline — Agent Playbook</p>
   <p class="cover-author">Melanie Angelica Anderson</p>
-  <p class="cover-desc">A four-scenario Make.com automation that discovers, evaluates, scores, and generates tailored job applications — powered by Claude (Anthropic), Tavily, Airtable, and Google Drive. Built to demonstrate end-to-end agentic workflow design for cross-functional teams.</p>
+  <p class="cover-desc">A four scenario Make.com automation that discovers, evaluates, scores, and generates tailored job applications — powered by Claude (Anthropic), Tavily, Airtable, and Google Drive. Built to demonstrate end to end agentic workflow design for cross functional teams.</p>
   <div class="cover-meta">
     <div class="cover-meta-item"><p class="cover-meta-label">Platform</p><p class="cover-meta-value">Make.com</p></div>
     <div class="cover-meta-item"><p class="cover-meta-label">AI Engine</p><p class="cover-meta-value">Claude Sonnet 4</p></div>
@@ -407,87 +335,75 @@
     <div class="cover-meta-item"><p class="cover-meta-label">Status</p><p class="cover-meta-value">Active — 2026</p></div>
   </div>
 </div>
-<!-- INTRO -->
+
 <div class="intro-section">
   <div class="intro-inner">
     <div class="intro-left">
       <h2>What This Agent Does</h2>
-      <p>This is a production-grade AI agent built to automate an entire job search pipeline — from discovery to a tailored, application-ready document — with zero manual searching required.</p>
-      <p>It runs on a schedule, finds real job listings from targeted sources, scores each one across seven dimensions aligned to a specific candidate profile, and generates customized resumes and cover letters only for high-scoring matches.</p>
-      <p>This playbook documents the agent's architecture, logic, decision rules, and team touchpoints — written so that any cross-functional team member can understand, configure, and build on it.</p>
+      <p>This is a production grade AI agent built to automate an entire job search pipeline. From discovery to a tailored, application ready document — with zero manual searching required.</p>
+      <p>It runs on a schedule, finds real job listings from targeted sources, scores each one across seven dimensions aligned to a specific candidate profile, and generates customized resumes and cover letters only for high scoring matches.</p>
+      <p>This playbook documents the agent's architecture, logic, decision rules, and team touchpoints — written so any cross functional team member can understand, configure, and build on it.</p>
     </div>
     <div class="intro-right">
       <div class="principle-card">
         <p class="principle-title">Human in the Loop</p>
-        <p class="principle-text">The AI surfaces and scores opportunities. Every application decision remains with the human. The agent advises — it does not decide.</p>
+        <p class="principle-text">The AI surfaces and scores opportunities. Every application decision stays with the human. The agent advises — it does not decide.</p>
       </div>
       <div class="principle-card plum-c">
-        <p class="principle-title">Config-Driven, Not Hard-Coded</p>
-        <p class="principle-text">All parameters — keywords, salary floor, scoring weights, job boards — live in an Airtable Config table. Non-technical team members can update the system by editing a single cell. No automation editing required.</p>
+        <p class="principle-title">Config Driven, Not Hard Coded</p>
+        <p class="principle-text">Every parameter — keywords, salary floor, scoring weights, job boards — lives in an Airtable Config table. Anyone on the team can update the system by editing a single cell. No automation editing required.</p>
       </div>
       <div class="principle-card brown-c">
         <p class="principle-title">Modular by Design</p>
-        <p class="principle-text">Each scenario has exactly one job. A failure in sourcing does not break scoring. A scoring delay does not block document generation. Built like professional software.</p>
+        <p class="principle-text">Each scenario has exactly one job. A failure in sourcing does not break scoring. A scoring delay does not block document generation. Built the way professional software is built.</p>
       </div>
     </div>
   </div>
 </div>
-<!-- WHY THIS MATTERS FOR TEAMS -->
+
 <div class="why-section">
   <div class="why-inner">
     <p class="section-label" style="color:var(--forest);">Why This Approach</p>
-    <h2 class="section-title" style="font-size:36px;margin-bottom:16px;">Why an Agent-Based Approach Matters for Teams</h2>
-    <p style="color:var(--text-muted);font-size:14.5px;max-width:680px;line-height:1.8;margin-bottom:0;">Most organizations still run high-stakes, repeatable processes manually — including recruitment, lead qualification, onboarding, and reporting. This agent demonstrates what becomes possible when those processes are designed with AI as a workflow partner.</p>
+    <h2 class="section-title" style="font-size:36px;margin-bottom:16px;">Why an Agent Based Approach Matters for Teams</h2>
+    <p style="color:var(--text-muted);font-size:14.5px;max-width:680px;line-height:1.8;">Most organizations still run high stakes, repeatable processes manually — recruitment, lead qualification, onboarding, reporting. This agent shows what becomes possible when those processes are designed with AI as a real workflow partner.</p>
     <div class="why-grid">
       <div class="why-card">
         <div class="why-icon f">🔁</div>
         <p class="why-card-title">Consistency at Scale</p>
-        <p class="why-card-desc">Every job is evaluated against the same weighted criteria, every time. No variation based on who ran the search or what day it was. The system applies the same judgment at scale that a skilled human would apply to a handful of listings.</p>
+        <p class="why-card-desc">Every job gets evaluated against the same weighted criteria every single time. No variation based on who ran the search or what day it was. The system applies the same thoughtful judgment at scale that a skilled human would apply to a handful of listings.</p>
       </div>
       <div class="why-card">
         <div class="why-icon p">⏱</div>
-        <p class="why-card-title">Time Returned to High-Value Work</p>
-        <p class="why-card-desc">Manual job searching, deduplication, scoring, and document tailoring can consume hours per week. This agent collapses that to a Monday morning review of pre-scored, pre-drafted applications — freeing the human for decisions only a human can make.</p>
+        <p class="why-card-title">Time Returned to High Value Work</p>
+        <p class="why-card-desc">Manual searching, deduplication, scoring, and document tailoring can eat hours every week. This agent collapses all of that into a Monday morning review of pre scored, pre drafted applications — so the human can focus on decisions only a human can make.</p>
       </div>
       <div class="why-card">
         <div class="why-icon b">🧠</div>
         <p class="why-card-title">Intelligence That Compounds</p>
-        <p class="why-card-desc">Every run adds to the outcome dataset. Over time, the team learns which sources produce interviews, which score ranges convert, and which keywords land. The system gets smarter as it operates — without requiring a developer to adjust it.</p>
+        <p class="why-card-desc">Every run adds to the outcome dataset. Over time the team learns which sources produce real interviews, which score ranges convert, and which keywords land. The system gets smarter the longer it runs — no developer required to adjust it.</p>
       </div>
     </div>
     <div class="why-banner">
-      <p><strong>The broader principle:</strong> This pipeline is a proof of concept for any team that runs repetitive, judgment-based workflows. The same architecture — Config-driven parameters, modular scenarios, AI scoring, human review — can be applied to customer onboarding, content workflows, sales qualification, vendor evaluation, and more. The agent does not replace the team. It removes the mechanical work so the team can focus on the work that requires them.</p>
+      <p><strong>The bigger picture:</strong> This pipeline is a proof of concept for any team running repetitive, judgment based workflows. The same architecture — config driven parameters, modular scenarios, AI scoring, human review — can be applied to customer onboarding, content workflows, sales qualification, vendor evaluation, and more. The agent does not replace the team. It removes the mechanical work so the team can focus on what actually requires them.</p>
     </div>
   </div>
 </div>
-<!-- HOW TEAMS USE IT -->
+
 <div class="howto-section">
   <div class="howto-inner">
     <p class="section-label" style="color:rgba(247,245,242,0.3);">For Teams</p>
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;color:#F7F5F2;line-height:1.1;margin-bottom:12px;">How Teams Interact With This Agent</h2>
-    <p style="font-size:14px;color:rgba(247,245,242,0.5);max-width:600px;line-height:1.8;">This agent is not a black box. Different team members engage with different parts of the pipeline depending on their role — no technical knowledge required for most interactions.</p>
+    <p style="font-size:14px;color:rgba(247,245,242,0.5);max-width:600px;line-height:1.8;">This agent is not a black box. Different team members engage with different parts of the pipeline depending on their role — no technical background required for most interactions.</p>
     <div class="howto-grid">
-      <div class="howto-card">
-        <span class="howto-icon">⚙️</span>
-        <p class="howto-title">Configure</p>
-        <p class="howto-desc">Update search keywords, salary floors, scoring weights, and job board priorities through the Airtable Config table — no automation editing required. One cell change recalibrates the whole system on the next run.</p>
-      </div>
-      <div class="howto-card">
-        <span class="howto-icon">📋</span>
-        <p class="howto-title">Review</p>
-        <p class="howto-desc">Weekly digest emails surface all new scored listings. Must Apply jobs have generated documents ready in Google Drive — linked directly in the Airtable record for instant access and review.</p>
-      </div>
-      <div class="howto-card">
-        <span class="howto-icon">📊</span>
-        <p class="howto-title">Track &amp; Iterate</p>
-        <p class="howto-desc">Update job status as applications progress. Outcome data builds over time — revealing which sources and score ranges produce real results, informing future config adjustments.</p>
-      </div>
+      <div class="howto-card"><span class="howto-icon">⚙️</span><p class="howto-title">Configure</p><p class="howto-desc">Update search keywords, salary floors, scoring weights, and job board priorities through the Airtable Config table. No automation editing required. One cell change recalibrates the whole system on the next run.</p></div>
+      <div class="howto-card"><span class="howto-icon">📋</span><p class="howto-title">Review</p><p class="howto-desc">Weekly digest emails surface all new scored listings. Must Apply jobs have generated documents ready in Google Drive — linked directly in the Airtable record for instant access and review.</p></div>
+      <div class="howto-card"><span class="howto-icon">📊</span><p class="howto-title">Track and Iterate</p><p class="howto-desc">Update job status as applications move forward. Outcome data builds over time — revealing which sources and score ranges produce real results and informing future config adjustments.</p></div>
     </div>
     <div class="demo-note" style="margin-top:40px;">
-      <p><strong>Note — For Demonstration Purposes:</strong> The team role breakdown below is included to exemplify how an AI agent playbook would be structured for a cross-functional team in an organizational context. In real-world deployment, this pipeline is operated by a single candidate. The role model is presented here to demonstrate how this architecture scales — and how the same playbook format would be used to onboard, align, and assign ownership across a team.</p>
+      <p><strong>Note — For Demonstration Purposes:</strong> The team role breakdown below shows how an AI agent playbook would be structured for a cross functional team in an organizational context. In real world deployment, this pipeline is operated by a single candidate. The role model is included here to demonstrate how this architecture scales and how the same playbook format would be used to onboard and align a full team.</p>
     </div>
     <div style="margin-top:32px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.08);">
-      <p style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(247,245,242,0.35);margin-bottom:20px;">Role-Based Ownership (Demonstration Model)</p>
+      <p style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(247,245,242,0.35);margin-bottom:20px;">Role Based Ownership (Demonstration Model)</p>
       <div class="audience-grid">
         <div class="audience-pill"><p class="audience-pill-role">Hiring Manager</p><p class="audience-pill-use">Reviews and approves scoring weights and criteria</p></div>
         <div class="audience-pill"><p class="audience-pill-role">Ops / Admin</p><p class="audience-pill-use">Updates keywords and monitors weekly digest</p></div>
@@ -497,21 +413,21 @@
     </div>
   </div>
 </div>
-<!-- OVERVIEW -->
+
 <div class="overview-bg">
   <div class="overview-header">
     <p class="section-label" style="color:var(--forest-mid);">System Architecture</p>
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:500;color:#F7F5F2;line-height:1.1;margin-bottom:16px;">Four Scenarios. One Closed Loop.</h2>
-    <p style="font-size:15px;color:rgba(247,245,242,0.6);max-width:600px;line-height:1.8;margin-bottom:48px;">Each scenario has one job and fails independently. A broken data source does not take down scoring logic. All configuration lives in Airtable — change any parameter by editing one cell, no automation editing required.</p>
+    <p style="font-size:15px;color:rgba(247,245,242,0.6);max-width:600px;line-height:1.8;margin-bottom:48px;">Each scenario has one job and fails independently. A broken data source does not take down the scoring logic. All configuration lives in Airtable — change any parameter by editing one cell, no automation editing required.</p>
   </div>
   <div class="overview-grid">
-    <div class="overview-card"><p class="overview-card-num oc1">01</p><p class="overview-card-title">AI Job Finder Scenario 1 — Controller</p><p class="overview-card-desc">Reads all parameters from the Config table, splits keywords into an array, queries Tavily for job listings per keyword, and sends each result to Scenario 2. Fires a weekly completion email.</p></div>
-    <div class="overview-card"><p class="overview-card-num oc2">02</p><p class="overview-card-title">AI Job Finder Scenario 2 — Clean + Filter</p><p class="overview-card-desc">Applies a series of automated filters and deduplicates each job against the existing Jobs table. Forwards only new, qualified listings to Scenario 3 for scoring.</p></div>
-    <div class="overview-card"><p class="overview-card-num oc3">03</p><p class="overview-card-title">AI Job Finder Scenario 3 — Score + Store</p><p class="overview-card-desc">Claude researches the company and scores 7 dimensions. Make calculates the weighted formula — not the AI. A 4-way router stores each job under the correct score tier in Airtable.</p></div>
-    <div class="overview-card"><p class="overview-card-num oc4">04</p><p class="overview-card-title">AI Job Finder Scenario 4 — Doc Generator</p><p class="overview-card-desc">Fetches high-scoring jobs, reads the correct base documents from Google Drive, sends to Claude for targeted injection, creates a customized output document, and emails the link.</p></div>
+    <div class="overview-card"><p class="overview-card-num oc1">01</p><p class="overview-card-title">Scenario 1 — Controller</p><p class="overview-card-desc">Reads all parameters from the Config table, splits keywords into an array, queries Tavily for job listings per keyword, and sends each result to Scenario 2. Fires a weekly completion email when the run finishes.</p></div>
+    <div class="overview-card"><p class="overview-card-num oc2">02</p><p class="overview-card-title">Scenario 2 — Clean and Filter</p><p class="overview-card-desc">Applies automated filters and deduplicates each job against the existing Jobs table. Forwards only new, qualified listings to Scenario 3 for scoring.</p></div>
+    <div class="overview-card"><p class="overview-card-num oc3">03</p><p class="overview-card-title">Scenario 3 — Score and Store</p><p class="overview-card-desc">Claude researches the company and scores 7 dimensions. Make calculates the weighted formula — not the AI. A 4 way router stores each job under the correct score tier in Airtable.</p></div>
+    <div class="overview-card"><p class="overview-card-num oc4">04</p><p class="overview-card-title">Scenario 4 — Doc Generator</p><p class="overview-card-desc">Fetches high scoring jobs, reads the correct base documents from Google Drive, sends them to Claude for targeted injection, creates a customized output document, and emails the link.</p></div>
   </div>
 </div>
-<!-- FLOW -->
+
 <div class="flow-section">
   <div class="flow-container">
     <p class="section-label" style="color:var(--forest);">Pipeline Flow</p>
@@ -519,13 +435,13 @@
     <div class="flow-row">
       <div class="flow-node"><p class="flow-node-s fn-s1">Scenario 1</p><p class="flow-node-name">Tavily Search</p><p class="flow-sub">per keyword</p></div>
       <div class="flow-arrow"></div>
-      <div class="flow-node"><p class="flow-node-s fn-s2">Scenario 2</p><p class="flow-node-name">Automated Filter</p><p class="flow-sub">remove bad fits</p></div>
+      <div class="flow-node"><p class="flow-node-s fn-s2">Scenario 2</p><p class="flow-node-name">Auto Filter</p><p class="flow-sub">remove bad fits</p></div>
       <div class="flow-arrow"></div>
       <div class="flow-node"><p class="flow-node-s fn-s2">Scenario 2</p><p class="flow-node-name">Deduplicate</p><p class="flow-sub">URL check</p></div>
       <div class="flow-arrow"></div>
       <div class="flow-node"><p class="flow-node-s fn-s3">Scenario 3</p><p class="flow-node-name">Claude Scores</p><p class="flow-sub">7 dimensions</p></div>
       <div class="flow-arrow"></div>
-      <div class="flow-node"><p class="flow-node-s fn-s3">Scenario 3</p><p class="flow-node-name">4-Way Router</p><p class="flow-sub">tier assignment</p></div>
+      <div class="flow-node"><p class="flow-node-s fn-s3">Scenario 3</p><p class="flow-node-name">4 Way Router</p><p class="flow-sub">tier assignment</p></div>
       <div class="flow-arrow"></div>
       <div class="flow-node"><p class="flow-node-s fn-s3">Scenario 3</p><p class="flow-node-name">Airtable</p><p class="flow-sub">record created</p></div>
       <div class="flow-arrow"></div>
@@ -533,48 +449,49 @@
     </div>
   </div>
 </div>
-<!-- CONFIG -->
+
 <div class="config-section">
   <div class="config-inner">
     <p class="section-label">Airtable Config Table</p>
     <h2 class="section-title">The Control Center</h2>
-    <p style="color:var(--text-muted);font-size:14.5px;max-width:680px;line-height:1.8;margin-bottom:40px;">The Config table is the single source of truth for the entire pipeline. Every parameter that controls how the agent searches, filters, scores, and acts lives here — not inside the automation itself. This separation is what makes the agent maintainable by non-technical team members. No one needs to open Make.com to change how the system behaves.</p>
+    <p style="color:var(--text-muted);font-size:14.5px;max-width:680px;line-height:1.8;margin-bottom:40px;">The Config table is the single source of truth for the entire pipeline. Every parameter that controls how the agent searches, filters, scores, and acts lives here — not buried inside the automation. This is what makes the system maintainable by anyone on the team. Nobody needs to open Make.com to change how the agent behaves.</p>
     <div class="config-explainer">
       <div>
         <div class="config-card">
           <div class="config-card-header forest">Search Parameters</div>
           <div class="config-card-body">
-            <div class="config-row"><span class="config-key-name">keywords</span><span class="config-key-desc">Job titles to search — comma-separated, drives all Tavily queries</span></div>
+            <div class="config-row"><span class="config-key-name">keywords</span><span class="config-key-desc">Job titles to search — drives all Tavily queries</span></div>
             <div class="config-row"><span class="config-key-name">job_boards</span><span class="config-key-desc">Domain restrictions and priorities for search results</span></div>
             <div class="config-row"><span class="config-key-name">include_domains</span><span class="config-key-desc">ATS and job board domains to surface in results</span></div>
-            <div class="config-row"><span class="config-key-name">max_results</span><span class="config-key-desc">Number of results returned per keyword per weekly run</span></div>
+            <div class="config-row"><span class="config-key-name">max_results</span><span class="config-key-desc">Number of results returned per keyword per run</span></div>
             <div class="config-row"><span class="config-key-name">location_rules</span><span class="config-key-desc">Acceptable work locations passed into the scoring prompt</span></div>
-            <div class="config-row"><span class="config-key-name">salary_floor</span><span class="config-key-desc">Desired minimum salary threshold used in scoring logic</span></div>
+            <div class="config-row"><span class="config-key-name">salary_floor</span><span class="config-key-desc">Minimum salary threshold used in scoring logic</span></div>
             <div class="config-row"><span class="config-key-name">digest_email</span><span class="config-key-desc">Email address receiving the weekly run summary</span></div>
           </div>
         </div>
       </div>
       <div>
         <div class="config-card">
-          <div class="config-card-header plum">Scoring &amp; Output Parameters</div>
+          <div class="config-card-header plum">Scoring and Output Parameters</div>
           <div class="config-card-body">
             <div class="config-row"><span class="config-key-name">weight_CF</span><span class="config-key-desc">Cultural Fit weight in the scoring formula</span></div>
-            <div class="config-row"><span class="config-key-name">weight_SF</span><span class="config-key-desc">Salary &amp; Flexibility weight</span></div>
+            <div class="config-row"><span class="config-key-name">weight_SF</span><span class="config-key-desc">Salary and Flexibility weight</span></div>
             <div class="config-row"><span class="config-key-name">weight_SK</span><span class="config-key-desc">Skill Fit weight</span></div>
             <div class="config-row"><span class="config-key-name">weight_VA/PF/EB/GF</span><span class="config-key-desc">Vision, Personality, Benefits, and Green Practice weights</span></div>
-            <div class="config-row"><span class="config-key-name">min_score</span><span class="config-key-desc">Minimum score for a job to be stored in Airtable at all</span></div>
+            <div class="config-row"><span class="config-key-name">min_score</span><span class="config-key-desc">Minimum score for a job to be stored in Airtable</span></div>
             <div class="config-row"><span class="config-key-name">resume_doc_ids</span><span class="config-key-desc">Google Doc IDs for each base resume variant</span></div>
             <div class="config-row"><span class="config-key-name">cl_doc_ids</span><span class="config-key-desc">Google Doc IDs for each cover letter variant</span></div>
           </div>
         </div>
         <div class="config-benefit">
           <p class="config-benefit-title">Why This Matters for Teams</p>
-          <p>No developer required. No automation editing needed. Change keywords to pivot the search strategy. Adjust weights to reprioritize what matters most. The system recalibrates automatically on the next scheduled run — putting configuration power in the hands of the people who understand the goals, not the people who built the pipes.</p>
+          <p>No developer required. No automation editing needed. Change keywords to pivot the search strategy. Adjust weights to reprioritize what matters most. The system recalibrates automatically on the next scheduled run — putting control in the hands of the people who understand the goals, not just the people who built the pipes.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <!-- SCENARIO 1 -->
 <hr class="scenario-sep s1">
 <div class="page">
@@ -590,22 +507,56 @@
           <span class="tag forest">Tavily Search</span>
           <span class="tag forest">Gmail Digest</span>
         </div>
-        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">The brain of the system. Runs automatically on a Monday morning schedule. Reads every parameter from the Config table, iterates over each keyword, queries Tavily for job listings, and sends each result downstream to Scenario 2. Fires a completion email when the run finishes.</p>
+        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">This is the brain of the system. It wakes up every Monday morning, reads every parameter from the Config table, loops through each search keyword, queries Tavily for real job listings, and sends each result downstream. When the run is complete it fires a summary email so you always know exactly what was found.</p>
       </div>
     </div>
-    <table class="module-table">
-      <thead><tr><th style="width:100px;">Step</th><th style="width:180px;">Name</th><th style="width:150px;">Type</th><th>What It Does</th></tr></thead>
-      <tbody>
-        <tr><td class="module-id">Config Read</td><td>Load All Parameters</td><td><span class="module-type airtable">Airtable ×12</span></td><td class="module-desc">Reads all Config keys sequentially — keywords, salary floor, location rules, all scoring weights, max results, min score, job boards, and digest email<p class="module-note">One Airtable Search module per config key. Values referenced by module number downstream.</p></td></tr>
-        <tr><td class="module-id">Split</td><td>Build Keyword Array</td><td><span class="module-type util">Set Variable</span></td><td class="module-desc">Splits the keywords string from Config into an array — one item per search term</td></tr>
-        <tr><td class="module-id">Iterate</td><td>Loop Over Keywords</td><td><span class="module-type util">Built-in Feeder</span></td><td class="module-desc">Creates one bundle per keyword — each triggers an independent Tavily search</td></tr>
-        <tr><td class="module-id">Search</td><td>Tavily Job Search</td><td><span class="module-type http">HTTP · POST</span></td><td class="module-desc">Queries Tavily's search API with keyword + location rules + target job boards. Returns job objects with title, URL, company, and content.<p class="module-note">Advanced search depth. Excludes known aggregator domains to prioritize direct ATS listings.</p></td></tr>
-        <tr><td class="module-id">Iterate</td><td>Loop Results</td><td><span class="module-type util">Built-in Feeder</span></td><td class="module-desc">Iterates over search results — one bundle per job listing returned</td></tr>
-        <tr><td class="module-id">Webhook</td><td>Send to Scenario 2</td><td><span class="module-type http">HTTP · POST</span></td><td class="module-desc">Sends each job to Scenario 2's webhook with all scoring weights and config values included in the payload</td></tr>
-        <tr><td class="module-id">Aggregate</td><td>Collect All Results</td><td><span class="module-type util">Basic Aggregator</span></td><td class="module-desc">Waits for all result bundles to complete — gates the Gmail digest so it fires only once after everything processes</td></tr>
-        <tr><td class="module-id">Email</td><td>Weekly Digest</td><td><span class="module-type google">Gmail</span></td><td class="module-desc">Sends a completion email to the digest address from Config — includes a direct link to the Airtable Jobs view</td></tr>
-      </tbody>
-    </table>
+
+    <div class="scenario-screenshot">
+      <div class="screenshot-label forest">Make.com — Scenario 1 · Controller</div>
+      <div class="screenshot-body">
+        <img src="https://arcbiztech.github.io/Zuri-Playbook/images/scenario-1-controller.png" alt="Scenario 1 Controller Make.com workflow" />
+      </div>
+    </div>
+
+    <p class="section-label" style="color:var(--forest);">How It Works</p>
+    <div class="scenario-flow-row">
+      <div class="sflow-node forest"><span class="sflow-icon">📅</span><p class="sflow-name forest">Schedule</p><p class="sflow-sub">Monday auto trigger</p></div>
+      <div class="sflow-arrow forest"></div>
+      <div class="sflow-node forest"><span class="sflow-icon">📋</span><p class="sflow-name forest">Config Read</p><p class="sflow-sub">12 parameters loaded</p></div>
+      <div class="sflow-arrow forest"></div>
+      <div class="sflow-node forest"><span class="sflow-icon">🔤</span><p class="sflow-name forest">Split Keywords</p><p class="sflow-sub">one per search</p></div>
+      <div class="sflow-arrow forest"></div>
+      <div class="sflow-node forest"><span class="sflow-icon">🔍</span><p class="sflow-name forest">Tavily Search</p><p class="sflow-sub">per keyword</p></div>
+      <div class="sflow-arrow forest"></div>
+      <div class="sflow-node forest"><span class="sflow-icon">📤</span><p class="sflow-name forest">Send to S2</p><p class="sflow-sub">one job at a time</p></div>
+      <div class="sflow-arrow forest"></div>
+      <div class="sflow-node forest"><span class="sflow-icon">📧</span><p class="sflow-name forest">Gmail Digest</p><p class="sflow-sub">run complete</p></div>
+    </div>
+
+    <div class="step-summaries">
+      <div class="step-summary forest">
+        <span class="step-summary-icon">📅</span>
+        <div>
+          <p class="step-summary-title forest">Runs automatically every Monday morning</p>
+          <p class="step-summary-desc">No manual trigger needed. The scenario wakes up on schedule and immediately reads all search parameters from the Airtable Config table — keywords, salary floor, location rules, scoring weights, job boards, and digest email. Everything the system needs to run is pulled from one place before a single search fires.</p>
+        </div>
+      </div>
+      <div class="step-summary forest">
+        <span class="step-summary-icon">🔍</span>
+        <div>
+          <p class="step-summary-title forest">Searches Tavily once per keyword</p>
+          <p class="step-summary-desc">Each keyword in the Config table generates its own independent Tavily search query with location rules and target job boards baked in. Results come back as raw job objects with title, company, URL, and description. This layer is focused on volume — the more raw data collected here, the more options there are to filter down from.</p>
+        </div>
+      </div>
+      <div class="step-summary forest">
+        <span class="step-summary-icon">📤</span>
+        <div>
+          <p class="step-summary-title forest">Sends every result to Scenario 2 then fires a digest</p>
+          <p class="step-summary-desc">Each job listing is forwarded one at a time to Scenario 2 via webhook — with all scoring weights and config values included in the payload. Once every result has been sent, an aggregator waits for the full run to complete before firing the weekly digest email to the address stored in Config.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="logic-grid">
       <div class="logic-card forest">
         <p class="logic-card-title">Search Strategy</p>
@@ -619,11 +570,12 @@
         <div class="logic-item"><span class="logic-dot"></span><span>Runs automatically Monday mornings — no manual trigger required</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>Can also be triggered manually via Run Once at any time</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>Scenario 4 runs on a separate delayed schedule after Scenario 1</span></div>
-        <div class="logic-item"><span class="logic-dot"></span><span>Scenarios 2 and 3 are webhook-triggered — no scheduling needed</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>Scenarios 2 and 3 are webhook triggered — no scheduling needed</span></div>
       </div>
     </div>
   </div>
 </div>
+
 <!-- SCENARIO 2 -->
 <hr class="divider"><hr class="scenario-sep s2">
 <div class="page">
@@ -632,29 +584,64 @@
       <div class="scenario-num-block nb-plum"><span class="scenario-num">02</span></div>
       <div>
         <p class="scenario-role">AI Job Finder Scenario 2</p>
-        <h2 class="scenario-title">Clean + Filter</h2>
+        <h2 class="scenario-title">Clean and Filter</h2>
         <div class="tag-row">
           <span class="tag plum">Webhook Trigger</span>
           <span class="tag plum">Automated Filters</span>
           <span class="tag plum">URL Deduplication</span>
         </div>
-        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">The quality gate. Receives each job from Scenario 1, applies a series of automated filters to ensure only relevant, compatible listings proceed, checks for duplicates against the Jobs table, and forwards only new and qualified listings to Scenario 3 for scoring.</p>
+        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">This is the quality gate. Every job that Scenario 1 finds lands here first. It gets filtered against a set of compatibility criteria, checked for duplicates against the existing Jobs table, and only forwarded to Scenario 3 if it passes both tests. The AI never sees a job that does not belong.</p>
       </div>
     </div>
-    <table class="module-table">
-      <thead><tr><th style="width:100px;">Step</th><th style="width:180px;">Name</th><th style="width:150px;">Type</th><th>What It Does</th></tr></thead>
-      <tbody>
-        <tr><td class="module-id">Receive</td><td>Webhook Receiver</td><td><span class="module-type webhook">Webhook</span></td><td class="module-desc">Receives job payload from Scenario 1 — includes URL, title, content, all scoring weights, and config values</td></tr>
-        <tr><td class="module-id">Filter</td><td>Automated Filter Gate</td><td><span class="module-type util">Filter + Sleep 10s</span></td><td class="module-desc">A series of automated filters evaluates each listing against predefined compatibility criteria before any database lookup or API call is made. Jobs that do not meet the criteria are stopped here.<p class="module-note">Filter runs before the sleep — only valid listings wait the 10 seconds before proceeding</p></td></tr>
-        <tr><td class="module-id">Filter</td><td>Source URL Filter</td><td><span class="module-type util">Filter</span></td><td class="module-desc">Blocks results from known aggregator domains that may have passed through Tavily — ensures only direct job page URLs proceed to scoring</td></tr>
-        <tr><td class="module-id">Search</td><td>Airtable Deduplicate</td><td><span class="module-type airtable">Airtable Search</span></td><td class="module-desc">Searches the Jobs table for an existing record with a matching URL<p class="module-note">Returns bundle count — 0 = new job and proceeds, 1 = already seen and skipped</p></td></tr>
-        <tr><td class="module-id">Webhook</td><td>Send to Scenario 3</td><td><span class="module-type http">HTTP · POST</span></td><td class="module-desc">Only fires when the dedupe check returns 0 results — confirms this is a new, unseen listing. Forwards the complete payload with all weights to Scenario 3.</td></tr>
-      </tbody>
-    </table>
+
+    <div class="scenario-screenshot">
+      <div class="screenshot-label plum">Make.com — Scenario 2 · Clean and Filter</div>
+      <div class="screenshot-body">
+        <img src="https://arcbiztech.github.io/Zuri-Playbook/images/scenario-2-filter.png" alt="Scenario 2 Filter Make.com workflow" />
+      </div>
+    </div>
+
+    <p class="section-label" style="color:var(--plum);">How It Works</p>
+    <div class="scenario-flow-row">
+      <div class="sflow-node plum"><span class="sflow-icon">🔗</span><p class="sflow-name plum">Webhook</p><p class="sflow-sub">receives job payload</p></div>
+      <div class="sflow-arrow plum"></div>
+      <div class="sflow-node plum"><span class="sflow-icon">🚦</span><p class="sflow-name plum">Filter Gate</p><p class="sflow-sub">title, content, source</p></div>
+      <div class="sflow-arrow plum"></div>
+      <div class="sflow-node plum"><span class="sflow-icon">⏳</span><p class="sflow-name plum">Sleep 10s</p><p class="sflow-sub">rate protection</p></div>
+      <div class="sflow-arrow plum"></div>
+      <div class="sflow-node plum"><span class="sflow-icon">🔎</span><p class="sflow-name plum">Deduplicate</p><p class="sflow-sub">URL check</p></div>
+      <div class="sflow-arrow plum"></div>
+      <div class="sflow-node plum"><span class="sflow-icon">📤</span><p class="sflow-name plum">Send to S3</p><p class="sflow-sub">new jobs only</p></div>
+    </div>
+
+    <div class="step-summaries">
+      <div class="step-summary plum">
+        <span class="step-summary-icon">🚦</span>
+        <div>
+          <p class="step-summary-title plum">Filters run before anything else</p>
+          <p class="step-summary-desc">The moment a job arrives, it hits a filter gate that evaluates the job title, content, and source URL simultaneously. All conditions must pass — any single failure stops the job right there. Only listings that clear every filter move forward to the deduplication check. This protects the AI scoring step from wasting time and tokens on jobs that were never a real fit.</p>
+        </div>
+      </div>
+      <div class="step-summary plum">
+        <span class="step-summary-icon">🔎</span>
+        <div>
+          <p class="step-summary-title plum">Every job URL is checked against Airtable</p>
+          <p class="step-summary-desc">After passing the filter gate, each job's URL is searched against the full Jobs table. If a match is found, the job is skipped entirely. If no match is found, it proceeds to Scenario 3. The same listing can never be scored twice across weekly runs — keeping the database clean and the scoring costs down.</p>
+        </div>
+      </div>
+      <div class="step-summary plum">
+        <span class="step-summary-icon">📤</span>
+        <div>
+          <p class="step-summary-title plum">Only qualified, new jobs reach the AI</p>
+          <p class="step-summary-desc">The final webhook only fires when a job has passed both the filter gate and the deduplication check. The complete payload — job data plus all scoring weights from Config — is forwarded to Scenario 3. Everything that arrives at the scoring step has already earned its place there.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="logic-grid">
       <div class="logic-card plum">
-        <p class="logic-card-title">Automated Filter Logic</p>
-        <div class="logic-item"><span class="logic-dot"></span><span>Multiple filter conditions are applied automatically to each incoming job</span></div>
+        <p class="logic-card-title">Filter Logic</p>
+        <div class="logic-item"><span class="logic-dot"></span><span>Multiple filter conditions applied automatically to each incoming job</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>Filters evaluate the job title, content, and source URL simultaneously</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>All filter conditions must pass — any single failure stops the job</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>Specific filter criteria are configurable and not publicly disclosed</span></div>
@@ -662,13 +649,14 @@
       <div class="logic-card brown">
         <p class="logic-card-title">Deduplication Logic</p>
         <div class="logic-item"><span class="logic-dot"></span><span>Every incoming job URL is checked against the full Jobs table</span></div>
-        <div class="logic-item"><span class="logic-dot"></span><span>Match found → job is skipped. No match → job proceeds to scoring.</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>Match found — job is skipped. No match — job proceeds to scoring.</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>The same listing is never scored twice across multiple weekly runs</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>Deduplication happens before the Claude API call — saves tokens and cost</span></div>
       </div>
     </div>
   </div>
 </div>
+
 <!-- SCENARIO 3 -->
 <hr class="divider"><hr class="scenario-sep s3">
 <div class="page">
@@ -677,62 +665,98 @@
       <div class="scenario-num-block nb-brown"><span class="scenario-num">03</span></div>
       <div>
         <p class="scenario-role">AI Job Finder Scenario 3</p>
-        <h2 class="scenario-title">Score + Store</h2>
+        <h2 class="scenario-title">Score and Store</h2>
         <div class="tag-row">
-          <span class="tag brown">Claude API + Web Search</span>
+          <span class="tag brown">Claude API with Web Search</span>
           <span class="tag brown">JSON Parse</span>
           <span class="tag brown">Weighted Formula</span>
-          <span class="tag brown">4-Way Router</span>
+          <span class="tag brown">4 Way Router</span>
           <span class="tag brown">Airtable Write</span>
         </div>
-        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">The intelligence layer. Claude web searches the company, scores 7 dimensions using 0.5-increment precision, and returns structured JSON. Make calculates the weighted formula — not the AI — keeping the math deterministic and auditable. A 4-way router stores each job under the correct score tier in Airtable.</p>
+        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">This is where the intelligence lives. Claude researches the company, scores 7 dimensions using 0.5 increment precision, and returns structured JSON. Make calculates the weighted formula — not the AI — keeping the math deterministic and auditable every single time. A 4 way router stores each job under the correct score tier in Airtable.</p>
       </div>
     </div>
-    <table class="module-table">
-      <thead><tr><th style="width:100px;">Step</th><th style="width:180px;">Name</th><th style="width:150px;">Type</th><th>What It Does</th></tr></thead>
-      <tbody>
-        <tr><td class="module-id">Receive</td><td>Webhook Receiver</td><td><span class="module-type webhook">Webhook</span></td><td class="module-desc">Receives qualified, deduplicated job payload from Scenario 2 with all config weights included<p class="module-note">Sequential mode ON · 1 run per minute maximum</p></td></tr>
-        <tr><td class="module-id">API</td><td>Claude Scoring Call</td><td><span class="module-type api">HTTP → Anthropic</span></td><td class="module-desc">Sends job title, company, and URL to Claude with a structured scoring prompt. Claude uses web search to research the company before scoring — verifying Glassdoor ratings, culture, salary, and mission.<p class="module-note">Model: claude-sonnet-4-20250514 · max_tokens: 1000 · temperature: 0 · Web search: 2 uses max</p></td></tr>
-        <tr><td class="module-id">Extract</td><td>Parse API Response</td><td><span class="module-type util">Set Variable</span></td><td class="module-desc">Extracts Claude's structured JSON from the API response content array</td></tr>
-        <tr><td class="module-id">Parse</td><td>JSON to Fields</td><td><span class="module-type util">JSON Parse</span></td><td class="module-desc">Converts Claude's JSON string into typed fields: CF, SF, SK, VA, PF, EB, GF, notes, resume_base, cover_letter_base, flags, years_exp_required, location, salary, company, and job title</td></tr>
-        <tr><td class="module-id">Calculate</td><td>My_Score Formula</td><td><span class="module-type util">Set Variable + Filter</span></td><td class="module-desc">Applies an experience year filter, then calculates: <code>CF × weight + SF × weight + SK × weight + VA × weight + PF × weight + EB × weight + GF × weight</code><p class="module-note">No round() — Make outputs true floating-point decimal. Airtable displays 2 decimal places.</p></td></tr>
-        <tr><td class="module-id">Route</td><td>Score Tier Router</td><td><span class="module-type util">4-Way Router</span></td><td class="module-desc">Pre-filter: URL must exist AND score must meet min_score. Then routes to 4 parallel Airtable branches based on the calculated score range.</td></tr>
-        <tr><td class="module-id">Store</td><td>Create Airtable Record</td><td><span class="module-type airtable">Airtable Create ×4</span></td><td class="module-desc">Creates one record per job with all fields populated — Score Category set automatically based on which router branch was taken<p class="module-note">Status defaults to "Ready to Apply" · Follow Up Date auto-set</p></td></tr>
-      </tbody>
-    </table>
+
+    <div class="scenario-screenshot">
+      <div class="screenshot-label brown">Make.com — Scenario 3 · Score and Store</div>
+      <div class="screenshot-body">
+        <img src="https://arcbiztech.github.io/Zuri-Playbook/images/Scenario-3-score.png" alt="Scenario 3 Score and Store Make.com workflow" />
+      </div>
+    </div>
+
+    <p class="section-label" style="color:var(--brown);">How It Works</p>
+    <div class="scenario-flow-row">
+      <div class="sflow-node brown"><span class="sflow-icon">🔗</span><p class="sflow-name brown">Webhook</p><p class="sflow-sub">qualified job arrives</p></div>
+      <div class="sflow-arrow brown"></div>
+      <div class="sflow-node brown"><span class="sflow-icon">🤖</span><p class="sflow-name brown">Claude Scores</p><p class="sflow-sub">web research + 7 dims</p></div>
+      <div class="sflow-arrow brown"></div>
+      <div class="sflow-node brown"><span class="sflow-icon">📦</span><p class="sflow-name brown">Parse JSON</p><p class="sflow-sub">extract all fields</p></div>
+      <div class="sflow-arrow brown"></div>
+      <div class="sflow-node brown"><span class="sflow-icon">🧮</span><p class="sflow-name brown">Calculate Score</p><p class="sflow-sub">Make runs the math</p></div>
+      <div class="sflow-arrow brown"></div>
+      <div class="sflow-node brown"><span class="sflow-icon">🔀</span><p class="sflow-name brown">4 Way Router</p><p class="sflow-sub">tier assignment</p></div>
+      <div class="sflow-arrow brown"></div>
+      <div class="sflow-node brown"><span class="sflow-icon">💾</span><p class="sflow-name brown">Airtable</p><p class="sflow-sub">record created</p></div>
+    </div>
+
+    <div class="step-summaries">
+      <div class="step-summary brown">
+        <span class="step-summary-icon">🤖</span>
+        <div>
+          <p class="step-summary-title brown">Claude researches the company before scoring</p>
+          <p class="step-summary-desc">For every qualified job that arrives, Claude uses web search to look up the company before assigning a single score. It checks Glassdoor ratings, culture signals, mission language, salary transparency, and founding details — then scores all 7 dimensions from 1 to 10 in 0.5 increments only. The result comes back as a strict JSON object with scores, notes, resume and cover letter suggestions, and any flags.</p>
+        </div>
+      </div>
+      <div class="step-summary brown">
+        <span class="step-summary-icon">🧮</span>
+        <div>
+          <p class="step-summary-title brown">Make calculates the formula — not the AI</p>
+          <p class="step-summary-desc">This is a deliberate architectural choice. AI math drifts and cannot be audited. So Claude returns the raw dimension scores and Make runs the weighted formula: CF times weight plus SF times weight plus SK times weight and so on across all 7 dimensions. The result is a true floating point decimal — consistent and verifiable every time.</p>
+        </div>
+      </div>
+      <div class="step-summary brown">
+        <span class="step-summary-icon">🔀</span>
+        <div>
+          <p class="step-summary-title brown">A 4 way router stores jobs by score tier</p>
+          <p class="step-summary-desc">Once the score is calculated, a router confirms the URL exists and the score meets the minimum threshold from Config. Then it routes the job to one of four parallel Airtable branches — Dream Role, Must Apply, Strong Fit, or Monitor. Each branch creates one complete Airtable record with all 22 fields populated and Status defaulted to Ready to Apply.</p>
+        </div>
+      </div>
+    </div>
+
     <p class="section-label" style="margin-top:48px;">Scoring System</p>
-    <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;margin-bottom:8px;">7-Dimension Weighted Formula</h3>
-    <p style="color:var(--text-muted);font-size:13.5px;margin-bottom:24px;max-width:640px;line-height:1.7;">Claude scores each dimension from 1–10 in 0.5 increments only — whole numbers are not permitted. Make calculates the final weighted score. All weights sum to 100% and are configurable in the Airtable Config table.</p>
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;margin-bottom:8px;">7 Dimension Weighted Formula</h3>
+    <p style="color:var(--text-muted);font-size:13.5px;margin-bottom:24px;max-width:640px;line-height:1.7;">Claude scores each dimension from 1 to 10 in 0.5 increments only. Whole numbers are not permitted. Make calculates the final weighted score. All weights sum to 100% and are configurable in the Airtable Config table.</p>
     <table class="scoring-table">
       <thead><tr><th style="width:70px;">Code</th><th>Dimension</th><th style="width:190px;">Weight</th><th>What Claude Evaluates</th></tr></thead>
       <tbody>
-        <tr><td><span class="dim-code cf">CF</span></td><td style="font-weight:500;">Cultural Fit</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill cf" style="width:100%"></div></div><span class="weight-pct">25%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Remote/hybrid culture, work-life balance, Glassdoor rating (bonus applied at threshold), absence of burnout signals</td></tr>
-        <tr><td><span class="dim-code sk">SK</span></td><td style="font-weight:500;">Skill Fit</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill sk" style="width:92%"></div></div><span class="weight-pct">23%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Program management, operations, automation, change management, facilitation, no-code/low-code. Bonus if AI/automation mentioned OR company is tech/SaaS</td></tr>
-        <tr><td><span class="dim-code sf">SF</span></td><td style="font-weight:500;">Salary &amp; Flexibility</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill sf" style="width:80%"></div></div><span class="weight-pct">20%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Meets desired salary floor (bonus if exceeded), location compatibility, EST-compatible hours, scheduling flexibility</td></tr>
-        <tr><td><span class="dim-code va">VA</span></td><td style="font-weight:500;">Vision &amp; Mission</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill va" style="width:48%"></div></div><span class="weight-pct">12%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Human-centered technology, education access, community, global equity, responsible innovation</td></tr>
-        <tr><td><span class="dim-code pf">PF</span></td><td style="font-weight:500;">Personality Fit</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill pf" style="width:32%"></div></div><span class="weight-pct">8%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Mindfulness, gaming culture, gamified products, sci-fi/storytelling themes, outdoors, creativity, global curiosity</td></tr>
+        <tr><td><span class="dim-code cf">CF</span></td><td style="font-weight:500;">Cultural Fit</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill cf" style="width:100%"></div></div><span class="weight-pct">25%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Remote or hybrid culture, work life balance, Glassdoor rating with bonus at threshold, absence of burnout signals</td></tr>
+        <tr><td><span class="dim-code sk">SK</span></td><td style="font-weight:500;">Skill Fit</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill sk" style="width:92%"></div></div><span class="weight-pct">23%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Program management, operations, automation, change management, facilitation, no code and low code. Bonus if AI or automation mentioned or company is tech or SaaS</td></tr>
+        <tr><td><span class="dim-code sf">SF</span></td><td style="font-weight:500;">Salary and Flexibility</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill sf" style="width:80%"></div></div><span class="weight-pct">20%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Meets salary floor with bonus if exceeded, location compatibility, EST compatible hours, scheduling flexibility</td></tr>
+        <tr><td><span class="dim-code va">VA</span></td><td style="font-weight:500;">Vision and Mission</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill va" style="width:48%"></div></div><span class="weight-pct">12%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Human centered technology, education access, community, global equity, responsible innovation</td></tr>
+        <tr><td><span class="dim-code pf">PF</span></td><td style="font-weight:500;">Personality Fit</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill pf" style="width:32%"></div></div><span class="weight-pct">8%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Mindfulness, gaming culture, gamified products, sci fi and storytelling themes, outdoors, creativity, global curiosity</td></tr>
         <tr><td><span class="dim-code eb">EB</span></td><td style="font-weight:500;">Employee Benefits</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill eb" style="width:28%"></div></div><span class="weight-pct">7%</span></div></td><td style="font-size:13px;color:var(--text-muted);">Health coverage, wellness stipend, L&D budget, flexible PTO, home office allowance, parental leave</td></tr>
-        <tr><td><span class="dim-code gf">GF</span></td><td style="font-weight:500;">Green Practice</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill gf" style="width:20%"></div></div><span class="weight-pct">5%</span></div></td><td style="font-size:13px;color:var(--text-muted);">B Corp certification, carbon neutral or net-zero commitments, zero-waste practice, environmental impact programs</td></tr>
+        <tr><td><span class="dim-code gf">GF</span></td><td style="font-weight:500;">Green Practice</td><td><div class="weight-bar-wrap"><div class="weight-bar"><div class="weight-fill gf" style="width:20%"></div></div><span class="weight-pct">5%</span></div></td><td style="font-size:13px;color:var(--text-muted);">B Corp certification, carbon neutral or net zero commitments, zero waste practice, environmental impact programs</td></tr>
       </tbody>
     </table>
-    <p style="font-size:12px;color:var(--text-muted);font-style:italic;margin-bottom:8px;">All 7 dimensions are active. Weights sum to 100%. Adjustable at any time via the Airtable Config table.</p>
+    <p style="font-size:12px;color:var(--text-muted);font-style:italic;margin-bottom:8px;">All 7 dimensions active. Weights sum to 100%. Adjustable at any time via the Airtable Config table.</p>
     <div class="tier-row">
       <div class="tier-card dream"><p class="tier-score">9.0+</p><p class="tier-name">Dream Role</p><p class="tier-action">Apply same day — all dimensions strongly aligned</p></div>
-      <div class="tier-card must"><p class="tier-score">8.5–8.9</p><p class="tier-name">Must Apply</p><p class="tier-action">Apply same day — triggers automatic doc generation</p></div>
-      <div class="tier-card strong"><p class="tier-score">8.0–8.49</p><p class="tier-name">Strong Fit</p><p class="tier-action">Prioritize — apply after additional research</p></div>
-      <div class="tier-card hold"><p class="tier-score">&lt; 8.0</p><p class="tier-name">Monitor / Hold</p><p class="tier-action">Watch or exhaust higher-scored options first</p></div>
+      <div class="tier-card must"><p class="tier-score">8.5 – 8.9</p><p class="tier-name">Must Apply</p><p class="tier-action">Apply same day — triggers automatic doc generation</p></div>
+      <div class="tier-card strong"><p class="tier-score">8.0 – 8.49</p><p class="tier-name">Strong Fit</p><p class="tier-action">Prioritize — apply after additional research</p></div>
+      <div class="tier-card hold"><p class="tier-score">&lt; 8.0</p><p class="tier-name">Monitor / Hold</p><p class="tier-action">Watch or exhaust higher scored options first</p></div>
     </div>
+
     <p class="section-label" style="margin-top:48px;">Document Selection</p>
-    <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;margin-bottom:16px;">Why There Are Multiple Resume &amp; Cover Letter Versions</h3>
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;margin-bottom:16px;">Why There Are Multiple Resume and Cover Letter Versions</h3>
     <div class="handwritten-rationale">
       <p class="handwritten-rationale-title">The Philosophy Behind Multiple Versions</p>
-      <p>Every resume and cover letter in this system was <strong>written entirely by hand</strong> — not generated by AI, not templated, and not interchangeable. Each version reflects a specific industry context, a different set of values the employer is likely to hold, and a distinct aspect of my professional story that resonates most with that type of organization.</p>
+      <p>Every resume and cover letter in this system was <strong>written entirely by hand</strong> — not generated by AI, not templated, and not interchangeable. Each version reflects a specific industry context, a different set of values the employer is likely to hold, and a distinct part of my professional story that resonates most with that type of organization.</p>
       <p>They are not changed by the automation. They do not get rewritten. They are preserved in full because <strong>the human voice, the personal narrative, and the philosophical framing are the most important things a document can carry</strong> — and those are the first things lost when AI takes over the writing.</p>
-      <p>Because every job that reaches document generation has already passed through the scoring system and scored extremely high, the keywords being injected are inherently relevant. High-scoring roles are already aligned to my skills and experience. Injecting those keywords into existing, genuinely written content is a targeted, honest optimization — not a fabrication.</p>
+      <p>Because every job that reaches document generation has already scored very high, the keywords being injected are inherently relevant. High scoring roles are already aligned to my skills and experience. Injecting those keywords into existing, genuinely written content is a targeted, honest optimization — not a fabrication.</p>
     </div>
     <div class="resume-map">
       <div class="resume-path">
-        <div class="resume-path-header forest">Wellness + EdTech Resume</div>
+        <div class="resume-path-header forest">Wellness and EdTech Resume</div>
         <div class="resume-path-body"><p><strong>When:</strong> Wellness, mindfulness, mental health, EdTech, language learning, nonprofits, NGOs, social impact, global health, community organizations</p><p style="margin-top:8px;font-size:12px;color:var(--text-muted);font-style:italic;">The company's mission — not its tech stack — determines which resume is used</p></div>
       </div>
       <div class="resume-path">
@@ -741,20 +765,38 @@
       </div>
       <div class="resume-path">
         <div class="resume-path-header brown">Green Resume</div>
-        <div class="resume-path-body"><p><strong>When:</strong> Environmental sustainability, conservation, green tech, B Corp certified, climate-focused, or nature-based organizations</p></div>
+        <div class="resume-path-body"><p><strong>When:</strong> Environmental sustainability, conservation, green tech, B Corp certified, climate focused, or nature based organizations</p></div>
       </div>
       <div class="resume-path">
         <div class="resume-path-header gold">Cover Letter Routing</div>
         <div class="resume-path-body">
           <p><strong>Wellness CL:</strong> Wellness company with a nature, mindfulness, or holistic wellbeing focus</p>
           <p><strong>EdTech CL:</strong> EdTech, nonprofits, NGOs, global health — or wellness company with an educational focus</p>
-          <p><strong>Biz Ops CL:</strong> General tech, SaaS, or operations-focused roles</p>
+          <p><strong>Biz Ops CL:</strong> General tech, SaaS, or operations focused roles</p>
           <p><strong>Green CL:</strong> Sustainability or B Corp organizations</p>
         </div>
       </div>
     </div>
+
+    <div class="logic-grid">
+      <div class="logic-card brown">
+        <p class="logic-card-title">Why Make Calculates the Score</p>
+        <div class="logic-item"><span class="logic-dot"></span><span>AI math drifts — the same inputs can return different outputs</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>Make runs the formula deterministically every single time</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>Results are verifiable, auditable, and not subject to AI variation</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>Weights are configurable in Airtable without touching the automation</span></div>
+      </div>
+      <div class="logic-card forest">
+        <p class="logic-card-title">Why 0.5 Increment Scoring</p>
+        <div class="logic-item"><span class="logic-dot"></span><span>Whole numbers create too many ties in the final weighted score</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>Half point precision gives Claude meaningful differentiation</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>Results in cleaner tier separation and more accurate routing</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>The system prompt explicitly instructs Claude to never use whole numbers</span></div>
+      </div>
+    </div>
   </div>
 </div>
+
 <!-- SCENARIO 4 -->
 <hr class="divider"><hr class="scenario-sep s4">
 <div class="page">
@@ -771,81 +813,117 @@
           <span class="tag gold">Google Docs Write</span>
           <span class="tag gold">Gmail Digest</span>
         </div>
-        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">The application layer. Fetches high-scoring jobs, reads the correct base documents from Google Drive, sends them to Claude for targeted injection, creates an output document in Google Drive, and emails the link for human review and final submission.</p>
+        <p style="color:var(--text-muted);font-size:14px;max-width:560px;line-height:1.8;">This is the application layer. It pulls every high scoring job from Airtable, selects the right base documents from Google Drive, sends them to Claude for precise targeted injection, creates a finished output document, and emails the link for human review. Discovery to application ready — fully automated.</p>
       </div>
     </div>
-    <table class="module-table">
-      <thead><tr><th style="width:100px;">Step</th><th style="width:180px;">Name</th><th style="width:150px;">Type</th><th>What It Does</th></tr></thead>
-      <tbody>
-        <tr><td class="module-id">Fetch</td><td>Pull High-Score Jobs</td><td><span class="module-type airtable">Airtable Search</span></td><td class="module-desc">Pulls all Jobs records where Status = "Ready to Apply", sorted by My Score descending<p class="module-note">Score filter applied immediately — only roles meeting the Must Apply threshold proceed to document generation</p></td></tr>
-        <tr><td class="module-id">Map</td><td>Select Resume Doc</td><td><span class="module-type util">Set Variable</span></td><td class="module-desc">Maps the Resume Base label from Airtable to the correct Google Doc ID — three possible resume documents</td></tr>
-        <tr><td class="module-id">Map</td><td>Select CL Doc</td><td><span class="module-type util">Set Variable</span></td><td class="module-desc">Maps the Cover Letter Base label to the correct Google Doc ID — four possible cover letter documents</td></tr>
-        <tr><td class="module-id">Read</td><td>Fetch Resume Content</td><td><span class="module-type google">Google Docs</span></td><td class="module-desc">Fetches full text content of the selected base resume from Google Drive</td></tr>
-        <tr><td class="module-id">Read</td><td>Fetch CL Content</td><td><span class="module-type google">Google Docs</span></td><td class="module-desc">Fetches full text content of the selected base cover letter</td></tr>
-        <tr><td class="module-id">Generate</td><td>Claude Injection</td><td><span class="module-type api">Anthropic · Claude</span></td><td class="module-desc">Receives the job title, company name, full job description, base resume text, and base cover letter text. Preserves both documents in full and injects targeted content with surgical precision.<p class="module-note">Model: claude-sonnet-4-20250514 · max_tokens: 2000 · temperature: 1</p></td></tr>
-        <tr><td class="module-id">Create</td><td>New Google Doc</td><td><span class="module-type google">Google Docs</span></td><td class="module-desc">Creates a new document titled "{Company} — {Job Title} — Application" in the designated output folder</td></tr>
-        <tr><td class="module-id">Update</td><td>Write Back to Airtable</td><td><span class="module-type airtable">Airtable Update</span></td><td class="module-desc">Writes the Google Doc URL to the Resume Link field and updates the Status to "Draft Ready"</td></tr>
-        <tr><td class="module-id">Email</td><td>Send Doc Digest</td><td><span class="module-type google">Gmail</span></td><td class="module-desc">Sends all generated document links in a single email — Company, Role, and direct Google Doc link for each draft</td></tr>
-      </tbody>
-    </table>
+
+    <div class="scenario-screenshot">
+      <div class="screenshot-label gold">Make.com — Scenario 4 · Document Generator</div>
+      <div class="screenshot-body">
+        <img src="https://arcbiztech.github.io/Zuri-Playbook/images/scenario-4-docs.png" alt="Scenario 4 Document Generator Make.com workflow" />
+      </div>
+    </div>
+
+    <p class="section-label" style="color:#7A5C1E;">How It Works</p>
+    <div class="scenario-flow-row">
+      <div class="sflow-node gold"><span class="sflow-icon">📋</span><p class="sflow-name gold">Fetch Jobs</p><p class="sflow-sub">high scores only</p></div>
+      <div class="sflow-arrow gold"></div>
+      <div class="sflow-node gold"><span class="sflow-icon">🗂️</span><p class="sflow-name gold">Select Docs</p><p class="sflow-sub">resume and CL</p></div>
+      <div class="sflow-arrow gold"></div>
+      <div class="sflow-node gold"><span class="sflow-icon">📖</span><p class="sflow-name gold">Fetch Content</p><p class="sflow-sub">read from Drive</p></div>
+      <div class="sflow-arrow gold"></div>
+      <div class="sflow-node gold"><span class="sflow-icon">🤖</span><p class="sflow-name gold">Claude Injects</p><p class="sflow-sub">surgical precision</p></div>
+      <div class="sflow-arrow gold"></div>
+      <div class="sflow-node gold"><span class="sflow-icon">📄</span><p class="sflow-name gold">Create Doc</p><p class="sflow-sub">new Google Doc</p></div>
+      <div class="sflow-arrow gold"></div>
+      <div class="sflow-node gold"><span class="sflow-icon">🔄</span><p class="sflow-name gold">Update Airtable</p><p class="sflow-sub">link written back</p></div>
+      <div class="sflow-arrow gold"></div>
+      <div class="sflow-node gold"><span class="sflow-icon">📧</span><p class="sflow-name gold">Email Digest</p><p class="sflow-sub">all links sent</p></div>
+    </div>
+
+    <div class="step-summaries">
+      <div class="step-summary gold">
+        <span class="step-summary-icon">🗂️</span>
+        <div>
+          <p class="step-summary-title gold">Selects the right documents automatically</p>
+          <p class="step-summary-desc">Scenario 4 pulls all Jobs records where Status equals Ready to Apply, sorted by score. For each one it maps the Resume Base and Cover Letter Base labels — assigned by Claude in Scenario 3 — to the correct Google Doc IDs stored in the Config table. The right base documents are selected without any manual input.</p>
+        </div>
+      </div>
+      <div class="step-summary gold">
+        <span class="step-summary-icon">🤖</span>
+        <div>
+          <p class="step-summary-title gold">Claude injects — it does not rewrite</p>
+          <p class="step-summary-desc">Claude receives the full job title, company name, job description, base resume text, and base cover letter text. The instruction is clear — preserve both documents in full and inject only what belongs. Company name, job title, and relevant keywords go in where they fit naturally. If a keyword does not fit cleanly, it gets skipped entirely. The voice and narrative structure stay exactly as written.</p>
+        </div>
+      </div>
+      <div class="step-summary gold">
+        <span class="step-summary-icon">📄</span>
+        <div>
+          <p class="step-summary-title gold">A finished document is created and linked back</p>
+          <p class="step-summary-desc">A new Google Doc is created in the designated output folder, titled with the company name and job title. The URL is written back to the Resume Link field in Airtable and the Status updates to Draft Ready automatically. A final email delivers every generated document link in one place — ready for human review and final personalization before submission.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="golden-rule">
       <p class="golden-rule-title">The Injection Standard — What Claude Does and Does Not Change</p>
       <div class="golden-rule-core">
-        <p><strong>The original resume and cover letter are preserved in full.</strong> Both documents are saved exactly as written before any changes are made. What Claude does is targeted and minimal: inject the company name, the specific job title, and relevant keywords where they fit naturally into the existing text — and optionally add one or two factual details about the company that strengthen what is already being said.</p>
+        <p><strong>The original resume and cover letter are preserved in full.</strong> Both documents are saved exactly as written before any changes are made. What Claude does is targeted and minimal — inject the company name, the specific job title, and relevant keywords where they fit naturally into the existing text, and optionally add one or two factual details about the company that strengthen what is already being said.</p>
       </div>
       <div class="golden-rule-grid" style="margin-top:20px;">
         <div>
           <p class="golden-rule-col-title">What Claude Injects Into the Resume</p>
-          <div class="logic-item gold"><span class="logic-dot"></span><span>Job title — updated in the header to align with the target role</span></div>
+          <div class="logic-item gold"><span class="logic-dot"></span><span>Job title updated in the header to align with the target role</span></div>
           <div class="logic-item gold"><span class="logic-dot"></span><span>Summary — relevant keywords woven naturally into existing sentences</span></div>
           <div class="logic-item gold"><span class="logic-dot"></span><span>Up to 3 bullet points — only where a keyword fits without forcing it</span></div>
-          <div class="logic-item gold"><span class="logic-dot"></span><span>If a keyword does not fit naturally — it is skipped entirely</span></div>
+          <div class="logic-item gold"><span class="logic-dot"></span><span>If a keyword does not fit naturally it is skipped entirely</span></div>
         </div>
         <div>
           <p class="golden-rule-col-title">What Claude Injects Into the Cover Letter</p>
-          <div class="logic-item gold"><span class="logic-dot"></span><span>Company name — updated throughout wherever the hiring team is referenced</span></div>
-          <div class="logic-item gold"><span class="logic-dot"></span><span>Job title — updated wherever the role is referenced in the text</span></div>
-          <div class="logic-item gold"><span class="logic-dot"></span><span>Relevant keywords — injected naturally into existing sentences only</span></div>
-          <div class="logic-item gold"><span class="logic-dot"></span><span>1–2 company facts — only if they strengthen something already being said</span></div>
+          <div class="logic-item gold"><span class="logic-dot"></span><span>Company name updated throughout wherever the hiring team is referenced</span></div>
+          <div class="logic-item gold"><span class="logic-dot"></span><span>Job title updated wherever the role is referenced in the text</span></div>
+          <div class="logic-item gold"><span class="logic-dot"></span><span>Relevant keywords injected naturally into existing sentences only</span></div>
+          <div class="logic-item gold"><span class="logic-dot"></span><span>1 to 2 company facts — only if they strengthen something already being said</span></div>
         </div>
       </div>
-      <p class="golden-rule-warning">The candidate's own words are the most important element of every document. The philosophical framing, personal stories, voice, and narrative structure are never touched. What arrives in the output document should feel indistinguishable from something written personally for that company — because it was. The automation only handles the mechanical parts. The human wrote everything that matters.</p>
+      <p class="golden-rule-warning">The candidate's own words are the most important element of every document. The philosophical framing, personal stories, voice, and narrative structure are never touched. What arrives in the output document should feel indistinguishable from something written personally for that company — because it was. The automation handles the mechanical parts. The human wrote everything that matters.</p>
     </div>
+
     <div class="logic-grid">
       <div class="logic-card gold">
         <p class="logic-card-title">Claude Output Format</p>
-        <div class="logic-item"><span class="logic-dot"></span><span>===ATS KEYWORDS=== — top 10 keywords extracted from the JD</span></div>
-        <div class="logic-item"><span class="logic-dot"></span><span>===RESUME=== — full original resume with minimal surgical injections</span></div>
-        <div class="logic-item"><span class="logic-dot"></span><span>===COVER LETTER=== — full original cover letter with targeted updates only</span></div>
-        <div class="logic-item"><span class="logic-dot"></span><span>===SUMMARY=== — top 3 alignment points for the reviewer's quick scan</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>ATS KEYWORDS — top 10 keywords extracted from the job description</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>RESUME — full original resume with minimal surgical injections only</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>COVER LETTER — full original cover letter with targeted updates only</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>SUMMARY — top 3 alignment points for the reviewer's quick scan</span></div>
       </div>
       <div class="logic-card forest">
         <p class="logic-card-title">Why This Only Runs for Top Scores</p>
-        <div class="logic-item"><span class="logic-dot"></span><span>Document generation only triggers for Must Apply scores (≥ 8.5)</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>Document generation only triggers for Must Apply scores at 8.5 and above</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>Every role at this threshold has already passed all filters and scoring</span></div>
-        <div class="logic-item"><span class="logic-dot"></span><span>Keywords from the JD are inherently aligned to the candidate's skills</span></div>
+        <div class="logic-item"><span class="logic-dot"></span><span>Keywords from the job description are inherently aligned to the candidate's skills</span></div>
         <div class="logic-item"><span class="logic-dot"></span><span>Injection is honest optimization — not fabrication — because fit is confirmed first</span></div>
       </div>
     </div>
   </div>
 </div>
-<!-- TEAM TOUCHPOINTS -->
+
 <div class="touchpoints-section">
   <div class="touchpoints-inner">
     <p class="section-label" style="color:rgba(247,245,242,0.3);">Team Operations</p>
-    <h2 style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;color:#F7F5F2;line-height:1.1;margin-bottom:12px;">Team Touchpoints &amp; Workflow</h2>
-    <p style="font-size:14px;color:rgba(247,245,242,0.6);max-width:600px;line-height:1.8;">What happens after the agent runs — and how the team stays in the loop without touching the automation.</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;color:#F7F5F2;line-height:1.1;margin-bottom:12px;">Team Touchpoints and Workflow</h2>
+    <p style="font-size:14px;color:rgba(247,245,242,0.6);max-width:600px;line-height:1.8;">What happens after the agent runs — and how the team stays informed without ever touching the automation.</p>
     <div class="touchpoint-grid">
-      <div class="touchpoint-card"><p class="tp-step">Step 1 — Monday Morning</p><p class="tp-title">Agent Runs Automatically</p><p class="tp-desc">Scenarios 1 and 4 run on schedule. No manual trigger required. The agent searches, scores, and generates documents while the team focuses elsewhere.</p><span class="tp-who">No action required</span></div>
-      <div class="touchpoint-card"><p class="tp-step">Step 2 — Email Arrives</p><p class="tp-title">Review the Weekly Digest</p><p class="tp-desc">Two emails arrive: one confirming the search run completed with a link to new scored listings in Airtable, and one with links to all generated application documents ready for review.</p><span class="tp-who">Candidate / Admin</span></div>
-      <div class="touchpoint-card"><p class="tp-step">Step 3 — Open Airtable</p><p class="tp-title">Review Scored Listings</p><p class="tp-desc">All new jobs appear in the Jobs table sorted by score. Must Apply rows have generated documents already linked — one click to open and review.</p><span class="tp-who">Candidate / Hiring Support</span></div>
-      <div class="touchpoint-card"><p class="tp-step">Step 4 — Review Docs</p><p class="tp-title">Personalize &amp; Submit</p><p class="tp-desc">Open the generated Google Doc. Review the injected content, confirm everything reads naturally, add any final personal touches, and submit. The document preserves the candidate's voice throughout.</p><span class="tp-who">Candidate</span></div>
-      <div class="touchpoint-card"><p class="tp-step">Step 5 — Update Status</p><p class="tp-title">Track Application Progress</p><p class="tp-desc">Change the Status field in Airtable as applications move forward: Applied → Interview → Offer → No Response. This builds an outcome dataset over time.</p><span class="tp-who">Candidate / Admin</span></div>
+      <div class="touchpoint-card"><p class="tp-step">Step 1 — Monday Morning</p><p class="tp-title">Agent Runs Automatically</p><p class="tp-desc">Scenarios 1 and 4 run on schedule. No manual trigger required. The agent searches, scores, and generates documents while the team focuses on other work.</p><span class="tp-who">No action required</span></div>
+      <div class="touchpoint-card"><p class="tp-step">Step 2 — Email Arrives</p><p class="tp-title">Review the Weekly Digest</p><p class="tp-desc">Two emails arrive — one confirming the search run completed with a link to new scored listings in Airtable, and one with links to all generated application documents ready for review.</p><span class="tp-who">Candidate / Admin</span></div>
+      <div class="touchpoint-card"><p class="tp-step">Step 3 — Open Airtable</p><p class="tp-title">Review Scored Listings</p><p class="tp-desc">All new jobs appear in the Jobs table sorted by score. Must Apply rows already have generated documents linked — one click to open and review.</p><span class="tp-who">Candidate / Hiring Support</span></div>
+      <div class="touchpoint-card"><p class="tp-step">Step 4 — Review Docs</p><p class="tp-title">Personalize and Submit</p><p class="tp-desc">Open the generated Google Doc. Review the injected content, confirm everything reads naturally, add any final personal touches, and submit. The candidate's voice is preserved throughout.</p><span class="tp-who">Candidate</span></div>
+      <div class="touchpoint-card"><p class="tp-step">Step 5 — Update Status</p><p class="tp-title">Track Application Progress</p><p class="tp-desc">Change the Status field in Airtable as applications move forward — Applied, Interview, Offer, No Response. This builds a real outcome dataset over time.</p><span class="tp-who">Candidate / Admin</span></div>
       <div class="touchpoint-card"><p class="tp-step">Step 6 — Tune the System</p><p class="tp-title">Adjust Config as You Learn</p><p class="tp-desc">After a few weeks, review which sources and score ranges produce real results. Update Config accordingly. No code changes, no Make editing required — one cell, immediate effect.</p><span class="tp-who">AI Builder / Ops Lead</span></div>
     </div>
   </div>
 </div>
-<!-- SCHEMA -->
+
 <div class="schema-section">
   <div class="schema-inner">
     <p class="section-label" style="color:var(--forest);">Data Layer</p>
@@ -864,8 +942,8 @@
       <div class="schema-field"><p class="schema-field-name">Cover Letter Base</p><p class="schema-field-type">Text · Classified by Claude</p></div>
       <div class="schema-field"><p class="schema-field-name">Resume Link</p><p class="schema-field-type">URL · Written by Scenario 4</p></div>
       <div class="schema-field"><p class="schema-field-name">Notes</p><p class="schema-field-type">Text · AI fit summary</p></div>
-      <div class="schema-field"><p class="schema-field-name">Follow Up Date</p><p class="schema-field-type">Date · Auto-set on creation</p></div>
-      <div class="schema-field"><p class="schema-field-name">Date Discovered</p><p class="schema-field-type">Date · Auto-set on creation</p></div>
+      <div class="schema-field"><p class="schema-field-name">Follow Up Date</p><p class="schema-field-type">Date · Auto set on creation</p></div>
+      <div class="schema-field"><p class="schema-field-name">Date Discovered</p><p class="schema-field-type">Date · Auto set on creation</p></div>
       <div class="schema-field"><p class="schema-field-name">Job Description</p><p class="schema-field-type">Long Text · Used for doc generation</p></div>
     </div>
     <p style="font-size:13px;font-weight:600;color:var(--forest);margin:32px 0 16px;">Application Status Lifecycle</p>
@@ -877,7 +955,7 @@
     </div>
   </div>
 </div>
-<!-- FOOTER -->
+
 <div class="playbook-footer">
   <div class="footer-brand">Zuri AI Job Finder — <em>Agent Playbook</em></div>
   <div class="footer-meta">
@@ -886,5 +964,6 @@
     Built in Make · Powered by Claude · Tracked in Airtable
   </div>
 </div>
+
 </body>
 </html>
