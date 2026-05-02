@@ -109,7 +109,7 @@
   .sflow-arrow.brown::after  { border-left-color: var(--brown-mid); }
   .sflow-arrow.gold::after   { border-left-color: #E5D4A8; }
   .step-summaries { display: flex; flex-direction: column; gap: 16px; margin: 32px 0; }
-  .step-summary { display: flex; gap: 20px; align-items: flex-start; padding: 20px 24px; border-radius: 12px; border: 1px solid; }
+  .step-summary { display: block; padding: 20px 24px; border-radius: 12px; border: 1px solid; }
   .step-summary.forest { background: var(--forest-pale); border-color: var(--forest-mid); }
   .step-summary.plum   { background: var(--plum-pale);   border-color: var(--plum-mid); }
   .step-summary.brown  { background: var(--brown-pale);  border-color: var(--brown-mid); }
@@ -317,23 +317,6 @@
   }
 </style>
 
-  <style>
-    /* Lucide icon sizing overrides */
-    .why-icon svg { width:20px;height:20px;stroke:white;stroke-width:1.75;fill:none; }
-    .howto-icon svg { width:22px;height:22px;stroke:rgba(247,245,242,0.65);stroke-width:1.5;fill:none;display:block; }
-    .sflow-icon svg { width:18px;height:18px;stroke-width:1.75;fill:none; }
-    .sflow-node.forest .sflow-icon svg { stroke:var(--forest); }
-    .sflow-node.plum   .sflow-icon svg { stroke:var(--plum); }
-    .sflow-node.brown  .sflow-icon svg { stroke:var(--brown); }
-    .sflow-node.gold   .sflow-icon svg { stroke:#7A5C1E; }
-    .step-summary-icon svg { width:22px;height:22px;stroke-width:1.75;fill:none; }
-    .step-summary.forest .step-summary-icon svg { stroke:var(--forest); }
-    .step-summary.plum   .step-summary-icon svg { stroke:var(--plum); }
-    .step-summary.brown  .step-summary-icon svg { stroke:var(--brown); }
-    .step-summary.gold   .step-summary-icon svg { stroke:#7A5C1E; }
-    .flow-icon svg { width:16px;height:16px;stroke-width:1.75;fill:none;stroke:var(--forest); }
-  </style>
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -386,17 +369,17 @@
     <p style="color:var(--text-muted);font-size:14.5px;max-width:680px;line-height:1.8;">Most organizations still run high stakes, repeatable processes manually — recruitment, lead qualification, onboarding, reporting. This agent shows what becomes possible when those processes are designed with AI as a real workflow partner.</p>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-icon f"><span data-lucide="refresh-cw"></span></div>
+        <div class="why-icon f"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="1.5"/><circle cx="10" cy="10" r="3.5" fill="white"/></svg></div>
         <p class="why-card-title">Consistency at Scale</p>
         <p class="why-card-desc">Every job gets evaluated against the same weighted criteria every single time. No variation based on who ran the search or what day it was. The system applies the same thoughtful judgment at scale that a skilled human would apply to a handful of listings.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon p"><span data-lucide="clock"></span></div>
+        <div class="why-icon p"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="2" stroke="white" stroke-width="1.5"/><rect x="7" y="7" width="6" height="6" rx="1" fill="white"/></svg></div>
         <p class="why-card-title">Time Returned to High Value Work</p>
         <p class="why-card-desc">Manual searching, deduplication, scoring, and document tailoring can eat hours every week. This agent collapses all of that into a Monday morning review of pre scored, pre drafted applications — so the human can focus on decisions only a human can make.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon b"><span data-lucide="zap"></span></div>
+        <div class="why-icon b"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polygon points="10,2 18,17 2,17" stroke="white" stroke-width="1.5" stroke-linejoin="round"/><polygon points="10,9 14,16 6,16" fill="white"/></svg></div>
         <p class="why-card-title">Intelligence That Compounds</p>
         <p class="why-card-desc">Every run adds to the outcome dataset. Over time the team learns which sources produce real interviews, which score ranges convert, and which keywords land. The system gets smarter the longer it runs — no developer required to adjust it.</p>
       </div>
@@ -413,9 +396,9 @@
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;color:#F7F5F2;line-height:1.1;margin-bottom:12px;">How Teams Interact With This Agent</h2>
     <p style="font-size:14px;color:rgba(247,245,242,0.5);max-width:600px;line-height:1.8;">This agent is not a black box. Different team members engage with different parts of the pipeline depending on their role — no technical background required for most interactions.</p>
     <div class="howto-grid">
-      <div class="howto-card"><span class="howto-icon"><span data-lucide="settings-2"></span></span><p class="howto-title">Configure</p><p class="howto-desc">Update search keywords, salary floors, scoring weights, and job board priorities through the Airtable Config table. No automation editing required. One cell change recalibrates the whole system on the next run.</p></div>
-      <div class="howto-card"><span class="howto-icon"><span data-lucide="layout-list"></span></span><p class="howto-title">Review</p><p class="howto-desc">Weekly digest emails surface all new scored listings. Must Apply jobs have generated documents ready in Google Drive — linked directly in the Airtable record for instant access and review.</p></div>
-      <div class="howto-card"><span class="howto-icon"><span data-lucide="trending-up"></span></span><p class="howto-title">Track and Iterate</p><p class="howto-desc">Update job status as applications move forward. Outcome data builds over time — revealing which sources and score ranges produce real results and informing future config adjustments.</p></div>
+      <div class="howto-card"><p class="howto-title">Configure</p><p class="howto-desc">Update search keywords, salary floors, scoring weights, and job board priorities through the Airtable Config table. No automation editing required. One cell change recalibrates the whole system on the next run.</p></div>
+      <div class="howto-card"><p class="howto-title">Review</p><p class="howto-desc">Weekly digest emails surface all new scored listings. Must Apply jobs have generated documents ready in Google Drive — linked directly in the Airtable record for instant access and review.</p></div>
+      <div class="howto-card"><p class="howto-title">Track and Iterate</p><p class="howto-desc">Update job status as applications move forward. Outcome data builds over time — revealing which sources and score ranges produce real results and informing future config adjustments.</p></div>
     </div>
     <div class="demo-note" style="margin-top:40px;">
       <p><strong>Note — For Demonstration Purposes:</strong> The team role breakdown below shows how an AI agent playbook would be structured for a cross functional team in an organizational context. In real world deployment, this pipeline is operated by a single candidate. The role model is included here to demonstrate how this architecture scales and how the same playbook format would be used to onboard and align a full team.</p>
@@ -538,36 +521,39 @@
 
     <p class="section-label" style="color:var(--forest);">How It Works</p>
     <div class="scenario-flow-row">
-      <div class="sflow-node forest"><span class="sflow-icon"><span data-lucide="calendar"></span></span><p class="sflow-name forest">Schedule</p><p class="sflow-sub">Monday auto trigger</p></div>
+      <div class="sflow-node forest">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#2D4A3E" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" fill="#2D4A3E"/></svg></span><p class="sflow-name forest">Schedule</p><p class="sflow-sub">Monday auto trigger</p></div>
       <div class="sflow-arrow forest"></div>
-      <div class="sflow-node forest"><span class="sflow-icon"><span data-lucide="database"></span></span><p class="sflow-name forest">Config Read</p><p class="sflow-sub">12 parameters loaded</p></div>
+      <div class="sflow-node forest">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#2D4A3E" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" fill="#2D4A3E"/></svg></span><p class="sflow-name forest">Config Read</p><p class="sflow-sub">12 parameters loaded</p></div>
       <div class="sflow-arrow forest"></div>
-      <div class="sflow-node forest"><span class="sflow-icon"><span data-lucide="layers"></span></span><p class="sflow-name forest">Split Keywords</p><p class="sflow-sub">one per search</p></div>
+      <div class="sflow-node forest">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#2D4A3E" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" fill="#2D4A3E"/></svg></span><p class="sflow-name forest">Split Keywords</p><p class="sflow-sub">one per search</p></div>
       <div class="sflow-arrow forest"></div>
-      <div class="sflow-node forest"><span class="sflow-icon"><span data-lucide="search"></span></span><p class="sflow-name forest">Tavily Search</p><p class="sflow-sub">per keyword</p></div>
+      <div class="sflow-node forest">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#2D4A3E" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" fill="#2D4A3E"/></svg></span><p class="sflow-name forest">Tavily Search</p><p class="sflow-sub">per keyword</p></div>
       <div class="sflow-arrow forest"></div>
-      <div class="sflow-node forest"><span class="sflow-icon"><span data-lucide="send"></span></span><p class="sflow-name forest">Send to S2</p><p class="sflow-sub">one job at a time</p></div>
+      <div class="sflow-node forest">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#2D4A3E" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" fill="#2D4A3E"/></svg></span><p class="sflow-name forest">Send to S2</p><p class="sflow-sub">one job at a time</p></div>
       <div class="sflow-arrow forest"></div>
-      <div class="sflow-node forest"><span class="sflow-icon"><span data-lucide="mail"></span></span><p class="sflow-name forest">Gmail Digest</p><p class="sflow-sub">run complete</p></div>
+      <div class="sflow-node forest">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#2D4A3E" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" fill="#2D4A3E"/></svg></span><p class="sflow-name forest">Gmail Digest</p><p class="sflow-sub">run complete</p></div>
     </div>
 
     <div class="step-summaries">
       <div class="step-summary forest">
-        <span class="step-summary-icon"><span data-lucide="calendar"></span></span>
         <div>
           <p class="step-summary-title forest">Runs automatically every Monday morning</p>
           <p class="step-summary-desc">No manual trigger needed. The scenario wakes up on schedule and immediately reads all search parameters from the Airtable Config table — keywords, salary floor, location rules, scoring weights, job boards, and digest email. Everything the system needs to run is pulled from one place before a single search fires.</p>
         </div>
       </div>
       <div class="step-summary forest">
-        <span class="step-summary-icon"><span data-lucide="search"></span></span>
         <div>
           <p class="step-summary-title forest">Searches Tavily once per keyword</p>
           <p class="step-summary-desc">Each keyword in the Config table generates its own independent Tavily search query with location rules and target job boards baked in. Results come back as raw job objects with title, company, URL, and description. This layer is focused on volume — the more raw data collected here, the more options there are to filter down from.</p>
         </div>
       </div>
       <div class="step-summary forest">
-        <span class="step-summary-icon"><span data-lucide="send"></span></span>
         <div>
           <p class="step-summary-title forest">Sends every result to Scenario 2 then fires a digest</p>
           <p class="step-summary-desc">Each job listing is forwarded one at a time to Scenario 2 via webhook — with all scoring weights and config values included in the payload. Once every result has been sent, an aggregator waits for the full run to complete before firing the weekly digest email to the address stored in Config.</p>
@@ -621,34 +607,36 @@
 
     <p class="section-label" style="color:var(--plum);">How It Works</p>
     <div class="scenario-flow-row">
-      <div class="sflow-node plum"><span class="sflow-icon"><span data-lucide="link-2"></span></span><p class="sflow-name plum">Webhook</p><p class="sflow-sub">receives job payload</p></div>
+      <div class="sflow-node plum">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="2" stroke="#5C3D6B" stroke-width="1.5"/><rect x="5" y="5" width="6" height="6" rx="1" fill="#5C3D6B"/></svg></span><p class="sflow-name plum">Webhook</p><p class="sflow-sub">receives job payload</p></div>
       <div class="sflow-arrow plum"></div>
-      <div class="sflow-node plum"><span class="sflow-icon"><span data-lucide="filter"></span></span><p class="sflow-name plum">Filter Gate</p><p class="sflow-sub">title, content, source</p></div>
+      <div class="sflow-node plum">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="2" stroke="#5C3D6B" stroke-width="1.5"/><rect x="5" y="5" width="6" height="6" rx="1" fill="#5C3D6B"/></svg></span><p class="sflow-name plum">Filter Gate</p><p class="sflow-sub">title, content, source</p></div>
       <div class="sflow-arrow plum"></div>
-      <div class="sflow-node plum"><span class="sflow-icon"><span data-lucide="timer"></span></span><p class="sflow-name plum">Sleep 10s</p><p class="sflow-sub">rate protection</p></div>
+      <div class="sflow-node plum">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="2" stroke="#5C3D6B" stroke-width="1.5"/><rect x="5" y="5" width="6" height="6" rx="1" fill="#5C3D6B"/></svg></span><p class="sflow-name plum">Sleep 10s</p><p class="sflow-sub">rate protection</p></div>
       <div class="sflow-arrow plum"></div>
-      <div class="sflow-node plum"><span class="sflow-icon"><span data-lucide="copy-check"></span></span><p class="sflow-name plum">Deduplicate</p><p class="sflow-sub">URL check</p></div>
+      <div class="sflow-node plum">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="2" stroke="#5C3D6B" stroke-width="1.5"/><rect x="5" y="5" width="6" height="6" rx="1" fill="#5C3D6B"/></svg></span><p class="sflow-name plum">Deduplicate</p><p class="sflow-sub">URL check</p></div>
       <div class="sflow-arrow plum"></div>
-      <div class="sflow-node plum"><span class="sflow-icon"><span data-lucide="send"></span></span><p class="sflow-name plum">Send to S3</p><p class="sflow-sub">new jobs only</p></div>
+      <div class="sflow-node plum">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="2" stroke="#5C3D6B" stroke-width="1.5"/><rect x="5" y="5" width="6" height="6" rx="1" fill="#5C3D6B"/></svg></span><p class="sflow-name plum">Send to S3</p><p class="sflow-sub">new jobs only</p></div>
     </div>
 
     <div class="step-summaries">
       <div class="step-summary plum">
-        <span class="step-summary-icon"><span data-lucide="filter"></span></span>
         <div>
           <p class="step-summary-title plum">Filters run before anything else</p>
           <p class="step-summary-desc">The moment a job arrives, it hits a filter gate that evaluates the job title, content, and source URL simultaneously. All conditions must pass — any single failure stops the job right there. Only listings that clear every filter move forward to the deduplication check. This protects the AI scoring step from wasting time and tokens on jobs that were never a real fit.</p>
         </div>
       </div>
       <div class="step-summary plum">
-        <span class="step-summary-icon"><span data-lucide="copy-check"></span></span>
         <div>
           <p class="step-summary-title plum">Every job URL is checked against Airtable</p>
           <p class="step-summary-desc">After passing the filter gate, each job's URL is searched against the full Jobs table. If a match is found, the job is skipped entirely. If no match is found, it proceeds to Scenario 3. The same listing can never be scored twice across weekly runs — keeping the database clean and the scoring costs down.</p>
         </div>
       </div>
       <div class="step-summary plum">
-        <span class="step-summary-icon"><span data-lucide="send"></span></span>
         <div>
           <p class="step-summary-title plum">Only qualified, new jobs reach the AI</p>
           <p class="step-summary-desc">The final webhook only fires when a job has passed both the filter gate and the deduplication check. The complete payload — job data plus all scoring weights from Config — is forwarded to Scenario 3. Everything that arrives at the scoring step has already earned its place there.</p>
@@ -704,36 +692,38 @@
 
     <p class="section-label" style="color:var(--brown);">How It Works</p>
     <div class="scenario-flow-row">
-      <div class="sflow-node brown"><span class="sflow-icon"><span data-lucide="link-2"></span></span><p class="sflow-name brown">Webhook</p><p class="sflow-sub">qualified job arrives</p></div>
+      <div class="sflow-node brown">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1.5 14.5,13.5 1.5,13.5" stroke="#4A3728" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,7 11,13 5,13" fill="#4A3728"/></svg></span><p class="sflow-name brown">Webhook</p><p class="sflow-sub">qualified job arrives</p></div>
       <div class="sflow-arrow brown"></div>
-      <div class="sflow-node brown"><span class="sflow-icon">🤖</span><p class="sflow-name brown">Claude Scores</p><p class="sflow-sub">web research + 7 dims</p></div>
+      <div class="sflow-node brown"><span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1.5 14.5,13.5 1.5,13.5" stroke="#4A3728" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,7 11,13 5,13" fill="#4A3728"/></svg></span><p class="sflow-name brown">Claude Scores</p><p class="sflow-sub">web research + 7 dims</p></div>
       <div class="sflow-arrow brown"></div>
-      <div class="sflow-node brown"><span class="sflow-icon"><span data-lucide="package"></span></span><p class="sflow-name brown">Parse JSON</p><p class="sflow-sub">extract all fields</p></div>
+      <div class="sflow-node brown">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1.5 14.5,13.5 1.5,13.5" stroke="#4A3728" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,7 11,13 5,13" fill="#4A3728"/></svg></span><p class="sflow-name brown">Parse JSON</p><p class="sflow-sub">extract all fields</p></div>
       <div class="sflow-arrow brown"></div>
-      <div class="sflow-node brown"><span class="sflow-icon"><span data-lucide="hash"></span></span><p class="sflow-name brown">Calculate Score</p><p class="sflow-sub">Make runs the math</p></div>
+      <div class="sflow-node brown">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1.5 14.5,13.5 1.5,13.5" stroke="#4A3728" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,7 11,13 5,13" fill="#4A3728"/></svg></span><p class="sflow-name brown">Calculate Score</p><p class="sflow-sub">Make runs the math</p></div>
       <div class="sflow-arrow brown"></div>
-      <div class="sflow-node brown"><span class="sflow-icon"><span data-lucide="git-merge"></span></span><p class="sflow-name brown">4 Way Router</p><p class="sflow-sub">tier assignment</p></div>
+      <div class="sflow-node brown">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1.5 14.5,13.5 1.5,13.5" stroke="#4A3728" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,7 11,13 5,13" fill="#4A3728"/></svg></span><p class="sflow-name brown">4 Way Router</p><p class="sflow-sub">tier assignment</p></div>
       <div class="sflow-arrow brown"></div>
-      <div class="sflow-node brown"><span class="sflow-icon"><span data-lucide="database"></span></span><p class="sflow-name brown">Airtable</p><p class="sflow-sub">record created</p></div>
+      <div class="sflow-node brown">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1.5 14.5,13.5 1.5,13.5" stroke="#4A3728" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,7 11,13 5,13" fill="#4A3728"/></svg></span><p class="sflow-name brown">Airtable</p><p class="sflow-sub">record created</p></div>
     </div>
 
     <div class="step-summaries">
       <div class="step-summary brown">
-        <span class="step-summary-icon"><span data-lucide="cpu"></span></span>
         <div>
           <p class="step-summary-title brown">Claude researches the company before scoring</p>
           <p class="step-summary-desc">For every qualified job that arrives, Claude uses web search to look up the company before assigning a single score. It checks Glassdoor ratings, culture signals, mission language, salary transparency, and founding details — then scores all 7 dimensions from 1 to 10 in 0.5 increments only. The result comes back as a strict JSON object with scores, notes, resume and cover letter suggestions, and any flags.</p>
         </div>
       </div>
       <div class="step-summary brown">
-        <span class="step-summary-icon"><span data-lucide="hash"></span></span>
         <div>
           <p class="step-summary-title brown">Make calculates the formula — not the AI</p>
           <p class="step-summary-desc">This is a deliberate architectural choice. AI math drifts and cannot be audited. So Claude returns the raw dimension scores and Make runs the weighted formula: CF times weight plus SF times weight plus SK times weight and so on across all 7 dimensions. The result is a true floating point decimal — consistent and verifiable every time.</p>
         </div>
       </div>
       <div class="step-summary brown">
-        <span class="step-summary-icon"><span data-lucide="git-merge"></span></span>
         <div>
           <p class="step-summary-title brown">A 4 way router stores jobs by score tier</p>
           <p class="step-summary-desc">Once the score is calculated, a router confirms the URL exists and the score meets the minimum threshold from Config. Then it routes the job to one of four parallel Airtable branches — Dream Role, Must Apply, Strong Fit, or Monitor. Each branch creates one complete Airtable record with all 22 fields populated and Status defaulted to Ready to Apply.</p>
@@ -844,38 +834,41 @@
 
     <p class="section-label" style="color:#7A5C1E;">How It Works</p>
     <div class="scenario-flow-row">
-      <div class="sflow-node gold"><span class="sflow-icon"><span data-lucide="database"></span></span><p class="sflow-name gold">Fetch Jobs</p><p class="sflow-sub">high scores only</p></div>
+      <div class="sflow-node gold">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1 15,8 8,15 1,8" stroke="#7A5C1E" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,5.5 11.5,8 8,11.5 4.5,8" fill="#7A5C1E"/></svg></span><p class="sflow-name gold">Fetch Jobs</p><p class="sflow-sub">high scores only</p></div>
       <div class="sflow-arrow gold"></div>
-      <div class="sflow-node gold"><span class="sflow-icon"><span data-lucide="folder-open"></span></span><p class="sflow-name gold">Select Docs</p><p class="sflow-sub">resume and CL</p></div>
+      <div class="sflow-node gold">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1 15,8 8,15 1,8" stroke="#7A5C1E" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,5.5 11.5,8 8,11.5 4.5,8" fill="#7A5C1E"/></svg></span><p class="sflow-name gold">Select Docs</p><p class="sflow-sub">resume and CL</p></div>
       <div class="sflow-arrow gold"></div>
-      <div class="sflow-node gold"><span class="sflow-icon"><span data-lucide="book-open"></span></span><p class="sflow-name gold">Fetch Content</p><p class="sflow-sub">read from Drive</p></div>
+      <div class="sflow-node gold">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1 15,8 8,15 1,8" stroke="#7A5C1E" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,5.5 11.5,8 8,11.5 4.5,8" fill="#7A5C1E"/></svg></span><p class="sflow-name gold">Fetch Content</p><p class="sflow-sub">read from Drive</p></div>
       <div class="sflow-arrow gold"></div>
-      <div class="sflow-node gold"><span class="sflow-icon">🤖</span><p class="sflow-name gold">Claude Injects</p><p class="sflow-sub">surgical precision</p></div>
+      <div class="sflow-node gold"><span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1 15,8 8,15 1,8" stroke="#7A5C1E" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,5.5 11.5,8 8,11.5 4.5,8" fill="#7A5C1E"/></svg></span><p class="sflow-name gold">Claude Injects</p><p class="sflow-sub">surgical precision</p></div>
       <div class="sflow-arrow gold"></div>
-      <div class="sflow-node gold"><span class="sflow-icon"><span data-lucide="file-text"></span></span><p class="sflow-name gold">Create Doc</p><p class="sflow-sub">new Google Doc</p></div>
+      <div class="sflow-node gold">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1 15,8 8,15 1,8" stroke="#7A5C1E" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,5.5 11.5,8 8,11.5 4.5,8" fill="#7A5C1E"/></svg></span><p class="sflow-name gold">Create Doc</p><p class="sflow-sub">new Google Doc</p></div>
       <div class="sflow-arrow gold"></div>
-      <div class="sflow-node gold"><span class="sflow-icon"><span data-lucide="refresh-cw"></span></span><p class="sflow-name gold">Update Airtable</p><p class="sflow-sub">link written back</p></div>
+      <div class="sflow-node gold">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1 15,8 8,15 1,8" stroke="#7A5C1E" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,5.5 11.5,8 8,11.5 4.5,8" fill="#7A5C1E"/></svg></span><p class="sflow-name gold">Update Airtable</p><p class="sflow-sub">link written back</p></div>
       <div class="sflow-arrow gold"></div>
-      <div class="sflow-node gold"><span class="sflow-icon"><span data-lucide="mail"></span></span><p class="sflow-name gold">Email Digest</p><p class="sflow-sub">all links sent</p></div>
+      <div class="sflow-node gold">
+        <span class="sflow-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="8,1 15,8 8,15 1,8" stroke="#7A5C1E" stroke-width="1.5" stroke-linejoin="round"/><polygon points="8,5.5 11.5,8 8,11.5 4.5,8" fill="#7A5C1E"/></svg></span><p class="sflow-name gold">Email Digest</p><p class="sflow-sub">all links sent</p></div>
     </div>
 
     <div class="step-summaries">
       <div class="step-summary gold">
-        <span class="step-summary-icon"><span data-lucide="folder-open"></span></span>
         <div>
           <p class="step-summary-title gold">Selects the right documents automatically</p>
           <p class="step-summary-desc">Scenario 4 pulls all Jobs records where Status equals Ready to Apply, sorted by score. For each one it maps the Resume Base and Cover Letter Base labels — assigned by Claude in Scenario 3 — to the correct Google Doc IDs stored in the Config table. The right base documents are selected without any manual input.</p>
         </div>
       </div>
       <div class="step-summary gold">
-        <span class="step-summary-icon"><span data-lucide="cpu"></span></span>
         <div>
           <p class="step-summary-title gold">Claude injects — it does not rewrite</p>
           <p class="step-summary-desc">Claude receives the full job title, company name, job description, base resume text, and base cover letter text. The instruction is clear — preserve both documents in full and inject only what belongs. Company name, job title, and relevant keywords go in where they fit naturally. If a keyword does not fit cleanly, it gets skipped entirely. The voice and narrative structure stay exactly as written.</p>
         </div>
       </div>
       <div class="step-summary gold">
-        <span class="step-summary-icon"><span data-lucide="file-text"></span></span>
         <div>
           <p class="step-summary-title gold">A finished document is created and linked back</p>
           <p class="step-summary-desc">A new Google Doc is created in the designated output folder, titled with the company name and job title. The URL is written back to the Resume Link field in Airtable and the Status updates to Draft Ready automatically. A final email delivers every generated document link in one place — ready for human review and final personalization before submission.</p>
@@ -932,12 +925,18 @@
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;color:#F7F5F2;line-height:1.1;margin-bottom:12px;">Team Touchpoints and Workflow</h2>
     <p style="font-size:14px;color:rgba(247,245,242,0.6);max-width:600px;line-height:1.8;">What happens after the agent runs — and how the team stays informed without ever touching the automation.</p>
     <div class="touchpoint-grid">
-      <div class="touchpoint-card"><p class="tp-step">Step 1 — Monday Morning</p><p class="tp-title">Agent Runs Automatically</p><p class="tp-desc">Scenarios 1 and 4 run on schedule. No manual trigger required. The agent searches, scores, and generates documents while the team focuses on other work.</p><span class="tp-who">No action required</span></div>
-      <div class="touchpoint-card"><p class="tp-step">Step 2 — Email Arrives</p><p class="tp-title">Review the Weekly Digest</p><p class="tp-desc">Two emails arrive — one confirming the search run completed with a link to new scored listings in Airtable, and one with links to all generated application documents ready for review.</p><span class="tp-who">Candidate / Admin</span></div>
-      <div class="touchpoint-card"><p class="tp-step">Step 3 — Open Airtable</p><p class="tp-title">Review Scored Listings</p><p class="tp-desc">All new jobs appear in the Jobs table sorted by score. Must Apply rows already have generated documents linked — one click to open and review.</p><span class="tp-who">Candidate / Hiring Support</span></div>
-      <div class="touchpoint-card"><p class="tp-step">Step 4 — Review Docs</p><p class="tp-title">Personalize and Submit</p><p class="tp-desc">Open the generated Google Doc. Review the injected content, confirm everything reads naturally, add any final personal touches, and submit. The candidate's voice is preserved throughout.</p><span class="tp-who">Candidate</span></div>
-      <div class="touchpoint-card"><p class="tp-step">Step 5 — Update Status</p><p class="tp-title">Track Application Progress</p><p class="tp-desc">Change the Status field in Airtable as applications move forward — Applied, Interview, Offer, No Response. This builds a real outcome dataset over time.</p><span class="tp-who">Candidate / Admin</span></div>
-      <div class="touchpoint-card"><p class="tp-step">Step 6 — Tune the System</p><p class="tp-title">Adjust Config as You Learn</p><p class="tp-desc">After a few weeks, review which sources and score ranges produce real results. Update Config accordingly. No code changes, no Make editing required — one cell, immediate effect.</p><span class="tp-who">AI Builder / Ops Lead</span></div>
+      <div class="touchpoint-card"><div style="width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:12px;font-weight:500;color:#F7F5F2;">1</div>
+      <p class="tp-step">Step 1 — Monday Morning</p><p class="tp-title">Agent Runs Automatically</p><p class="tp-desc">Scenarios 1 and 4 run on schedule. No manual trigger required. The agent searches, scores, and generates documents while the team focuses on other work.</p><span class="tp-who">No action required</span></div>
+      <div class="touchpoint-card"><div style="width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:12px;font-weight:500;color:#F7F5F2;">2</div>
+      <p class="tp-step">Step 2 — Email Arrives</p><p class="tp-title">Review the Weekly Digest</p><p class="tp-desc">Two emails arrive — one confirming the search run completed with a link to new scored listings in Airtable, and one with links to all generated application documents ready for review.</p><span class="tp-who">Candidate / Admin</span></div>
+      <div class="touchpoint-card"><div style="width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:12px;font-weight:500;color:#F7F5F2;">3</div>
+      <p class="tp-step">Step 3 — Open Airtable</p><p class="tp-title">Review Scored Listings</p><p class="tp-desc">All new jobs appear in the Jobs table sorted by score. Must Apply rows already have generated documents linked — one click to open and review.</p><span class="tp-who">Candidate / Hiring Support</span></div>
+      <div class="touchpoint-card"><div style="width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:12px;font-weight:500;color:#F7F5F2;">4</div>
+      <p class="tp-step">Step 4 — Review Docs</p><p class="tp-title">Personalize and Submit</p><p class="tp-desc">Open the generated Google Doc. Review the injected content, confirm everything reads naturally, add any final personal touches, and submit. The candidate's voice is preserved throughout.</p><span class="tp-who">Candidate</span></div>
+      <div class="touchpoint-card"><div style="width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:12px;font-weight:500;color:#F7F5F2;">5</div>
+      <p class="tp-step">Step 5 — Update Status</p><p class="tp-title">Track Application Progress</p><p class="tp-desc">Change the Status field in Airtable as applications move forward — Applied, Interview, Offer, No Response. This builds a real outcome dataset over time.</p><span class="tp-who">Candidate / Admin</span></div>
+      <div class="touchpoint-card"><div style="width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:12px;font-weight:500;color:#F7F5F2;">6</div>
+      <p class="tp-step">Step 6 — Tune the System</p><p class="tp-title">Adjust Config as You Learn</p><p class="tp-desc">After a few weeks, review which sources and score ranges produce real results. Update Config accordingly. No code changes, no Make editing required — one cell, immediate effect.</p><span class="tp-who">AI Builder / Ops Lead</span></div>
     </div>
   </div>
 </div>
@@ -983,6 +982,5 @@
   </div>
 </div>
 
-<script>lucide.createIcons();</script>
 </body>
 </html>
